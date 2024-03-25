@@ -69,6 +69,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="StartGameForm.resx">
+      <DependentUpon>StartGameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TurnPlayerForm.resx">
+      <DependentUpon>TurnPlayerForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

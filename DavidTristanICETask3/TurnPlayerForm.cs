@@ -16,5 +16,10 @@ namespace DavidTristanICETask3
         {
             InitializeComponent();
         }
+
+        private void TurnPlayerForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
