@@ -36,5 +36,10 @@ namespace DavidTristanICETask3
         {
 
         }
+
+        private void lblPlayerMove3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
