@@ -57,10 +57,12 @@
             this.lblPlayerName2 = new System.Windows.Forms.Label();
             this.lblPlayer1 = new System.Windows.Forms.Label();
             this.lblPlayer2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlPlayer1.SuspendLayout();
             this.pnlDragonType1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.pnlDragonType2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblDragonStats
@@ -374,12 +376,21 @@
             this.lblPlayer2.TabIndex = 0;
             this.lblPlayer2.Text = "Player 2";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(624, 242);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
             // StartGameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(944, 501);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblPlayer2);
             this.Controls.Add(this.lblPlayer1);
             this.Controls.Add(this.panel1);
@@ -396,6 +407,7 @@
             this.panel1.PerformLayout();
             this.pnlDragonType2.ResumeLayout(false);
             this.pnlDragonType2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -431,6 +443,7 @@
         private System.Windows.Forms.RadioButton rbtnWindDragon2;
         private System.Windows.Forms.RadioButton rbtnIceDragon2;
         private System.Windows.Forms.Button btnSave2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
