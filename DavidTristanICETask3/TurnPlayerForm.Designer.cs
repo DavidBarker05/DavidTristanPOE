@@ -1,6 +1,4 @@
-﻿using System.Windows.Forms;
-
-namespace DavidTristanICETask3
+﻿namespace DavidTristanICETask3
 {
     partial class TurnPlayerForm
     {
