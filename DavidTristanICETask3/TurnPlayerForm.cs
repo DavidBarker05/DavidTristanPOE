@@ -21,5 +21,20 @@ namespace DavidTristanICETask3
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblOpponent_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblHp1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
