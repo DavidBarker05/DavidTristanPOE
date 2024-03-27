@@ -67,7 +67,7 @@
             // 
             this.lblDragonStats.AutoSize = true;
             this.lblDragonStats.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDragonStats.Location = new System.Drawing.Point(549, 0);
+            this.lblDragonStats.Location = new System.Drawing.Point(789, 70);
             this.lblDragonStats.Name = "lblDragonStats";
             this.lblDragonStats.Size = new System.Drawing.Size(151, 360);
             this.lblDragonStats.TabIndex = 0;
@@ -378,7 +378,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(704, 366);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(944, 501);
             this.Controls.Add(this.lblPlayer2);
             this.Controls.Add(this.lblPlayer1);
             this.Controls.Add(this.panel1);
