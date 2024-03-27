@@ -17,9 +17,10 @@ namespace DavidTristanICETask3
             InitializeComponent();
         }
 
-        private void TurnPlayerForm_Load(object sender, EventArgs e)
+        // https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.formclosingeventargs?view=windowsdesktop-8.0
+        private void TurnPlayerForm_Exit(object sender, FormClosingEventArgs e)
         {
-
+            Application.Exit();
         }
 
         private void label1_Click(object sender, EventArgs e)

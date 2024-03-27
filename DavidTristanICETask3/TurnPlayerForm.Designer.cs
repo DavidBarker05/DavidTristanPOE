@@ -1,4 +1,6 @@
-﻿namespace DavidTristanICETask3
+﻿using System.Windows.Forms;
+
+namespace DavidTristanICETask3
 {
     partial class TurnPlayerForm
     {
@@ -314,7 +316,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "TurnPlayerForm";
             this.Text = "TurnPlayerForm";
-            this.Load += new System.EventHandler(this.TurnPlayerForm_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TurnPlayerForm_Exit); // https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.form.formclosing?view=windowsdesktop-8.0#system-windows-forms-form-formclosing + https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.formclosingeventhandler?view=windowsdesktop-8.0
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
