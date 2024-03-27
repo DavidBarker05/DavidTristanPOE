@@ -117,30 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="lblDragonStats.Text" xml:space="preserve">
-    <value>Dragon Stats:
-Fire Dragon
-20 HP
-5 Attack Damage
-12 Special Attack Damage
-4 Block Damage
-
-Ice Dragon
-30HP
-4 Attack Damage
-9 Special Attack Damage
-5 Block Damage
-
-Wind Dragon
-40 HP
-3 Attack Damage
-7 Special Attack Damage
-5 Block Damage
-
-Earth Dragon
-50 HP
-2 Attack Damage
-5 Special Attack Damage
-6 Block Damage</value>
-  </data>
 </root>

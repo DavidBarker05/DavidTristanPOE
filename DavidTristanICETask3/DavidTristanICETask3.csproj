@@ -68,6 +68,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="StartGameForm.resx">
       <DependentUpon>StartGameForm.cs</DependentUpon>
@@ -87,6 +88,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fire Dragon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ice Dragon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wind Dragon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Earth Dragon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
