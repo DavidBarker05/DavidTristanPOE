@@ -316,7 +316,7 @@ namespace DavidTristanICETask3
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "TurnPlayerForm";
             this.Text = "TurnPlayerForm";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TurnPlayerForm_Exit); // https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.form.formclosing?view=windowsdesktop-8.0#system-windows-forms-form-formclosing + https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.formclosingeventhandler?view=windowsdesktop-8.0
+            this.FormClosing += this.TurnPlayerForm_Exit; // https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.form.formclosing?view=windowsdesktop-8.0#system-windows-forms-form-formclosing
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
