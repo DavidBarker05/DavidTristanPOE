@@ -17,7 +17,7 @@ namespace DavidTristanICETask3
             InitializeComponent();
         }
 
-        // https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.formclosingeventargs?view=windowsdesktop-8.0
+        // https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.formclosingeventhandler?view=windowsdesktop-8.0
         private void TurnPlayerForm_Exit(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
