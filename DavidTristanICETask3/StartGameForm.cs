@@ -18,6 +18,8 @@ namespace DavidTristanICETask3
         public StartGameForm()
         {
             InitializeComponent();
+            rbtnFireDragon1.Select();
+            rbtnFireDragon2.Select();
         }
 
         private void btnSave1_Click(object sender, EventArgs e)
