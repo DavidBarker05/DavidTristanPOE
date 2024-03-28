@@ -175,7 +175,6 @@
             this.lblOpponent.Size = new System.Drawing.Size(128, 20);
             this.lblOpponent.TabIndex = 0;
             this.lblOpponent.Text = "Opponent: name";
-            this.lblOpponent.Click += new System.EventHandler(this.lblOpponent_Click);
             // 
             // lblBattleLog
             // 

@@ -38,10 +38,5 @@ namespace DavidTristanICETask3
         {
             Application.Exit();
         }
-
-        private void lblOpponent_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
