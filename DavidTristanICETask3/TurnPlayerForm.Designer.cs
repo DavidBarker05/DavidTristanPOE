@@ -39,22 +39,26 @@
             this.lblDragonNameType2 = new System.Windows.Forms.Label();
             this.pnlBattleLog = new System.Windows.Forms.Panel();
             this.pnlBattleLogReport = new System.Windows.Forms.Panel();
+            this.lblBattle = new System.Windows.Forms.Label();
             this.lblOpponent = new System.Windows.Forms.Label();
             this.lblBattleLog = new System.Windows.Forms.Label();
-            this.lblBattle = new System.Windows.Forms.Label();
+            this.picPlayer1Dragon = new System.Windows.Forms.PictureBox();
+            this.lblVs = new System.Windows.Forms.Label();
+            this.picPlayer2Dragon = new System.Windows.Forms.PictureBox();
             this.pnlPlayerMove.SuspendLayout();
             this.pnlOpponent.SuspendLayout();
             this.pnlBattleLog.SuspendLayout();
             this.pnlBattleLogReport.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picPlayer1Dragon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPlayer2Dragon)).BeginInit();
             this.SuspendLayout();
             // 
             // lblDragonNameType1
             // 
             this.lblDragonNameType1.AutoSize = true;
-            this.lblDragonNameType1.Location = new System.Drawing.Point(16, 6);
-            this.lblDragonNameType1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDragonNameType1.Location = new System.Drawing.Point(24, 9);
             this.lblDragonNameType1.Name = "lblDragonNameType1";
-            this.lblDragonNameType1.Size = new System.Drawing.Size(105, 13);
+            this.lblDragonNameType1.Size = new System.Drawing.Size(155, 20);
             this.lblDragonNameType1.TabIndex = 0;
             this.lblDragonNameType1.Text = "Dragon Name + type";
             // 
@@ -64,28 +68,25 @@
             this.pnlPlayerMove.Controls.Add(this.btnSpAttack);
             this.pnlPlayerMove.Controls.Add(this.lblHp1);
             this.pnlPlayerMove.Controls.Add(this.btnAttack);
-            this.pnlPlayerMove.Location = new System.Drawing.Point(8, 14);
-            this.pnlPlayerMove.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlPlayerMove.Location = new System.Drawing.Point(12, 22);
             this.pnlPlayerMove.Name = "pnlPlayerMove";
-            this.pnlPlayerMove.Size = new System.Drawing.Size(161, 186);
+            this.pnlPlayerMove.Size = new System.Drawing.Size(242, 286);
             this.pnlPlayerMove.TabIndex = 1;
             // 
             // btnBlock
             // 
-            this.btnBlock.Location = new System.Drawing.Point(25, 129);
-            this.btnBlock.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBlock.Location = new System.Drawing.Point(38, 198);
             this.btnBlock.Name = "btnBlock";
-            this.btnBlock.Size = new System.Drawing.Size(113, 37);
+            this.btnBlock.Size = new System.Drawing.Size(170, 57);
             this.btnBlock.TabIndex = 4;
             this.btnBlock.Text = "Block";
             this.btnBlock.UseVisualStyleBackColor = true;
             // 
             // btnSpAttack
             // 
-            this.btnSpAttack.Location = new System.Drawing.Point(25, 88);
-            this.btnSpAttack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSpAttack.Location = new System.Drawing.Point(38, 135);
             this.btnSpAttack.Name = "btnSpAttack";
-            this.btnSpAttack.Size = new System.Drawing.Size(113, 37);
+            this.btnSpAttack.Size = new System.Drawing.Size(170, 57);
             this.btnSpAttack.TabIndex = 3;
             this.btnSpAttack.Text = "Special Attack";
             this.btnSpAttack.UseVisualStyleBackColor = true;
@@ -93,19 +94,17 @@
             // lblHp1
             // 
             this.lblHp1.AutoSize = true;
-            this.lblHp1.Location = new System.Drawing.Point(39, 18);
-            this.lblHp1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblHp1.Location = new System.Drawing.Point(58, 28);
             this.lblHp1.Name = "lblHp1";
-            this.lblHp1.Size = new System.Drawing.Size(82, 13);
+            this.lblHp1.Size = new System.Drawing.Size(121, 20);
             this.lblHp1.TabIndex = 1;
             this.lblHp1.Text = "HP: HP Amount";
             // 
             // btnAttack
             // 
-            this.btnAttack.Location = new System.Drawing.Point(25, 44);
-            this.btnAttack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAttack.Location = new System.Drawing.Point(38, 68);
             this.btnAttack.Name = "btnAttack";
-            this.btnAttack.Size = new System.Drawing.Size(113, 40);
+            this.btnAttack.Size = new System.Drawing.Size(170, 62);
             this.btnAttack.TabIndex = 0;
             this.btnAttack.Text = "Attack";
             this.btnAttack.UseVisualStyleBackColor = true;
@@ -114,39 +113,35 @@
             // 
             this.pnlOpponent.Controls.Add(this.lblHp2);
             this.pnlOpponent.Controls.Add(this.lblDragonNameType2);
-            this.pnlOpponent.Location = new System.Drawing.Point(228, 65);
-            this.pnlOpponent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlOpponent.Location = new System.Drawing.Point(342, 100);
             this.pnlOpponent.Name = "pnlOpponent";
-            this.pnlOpponent.Size = new System.Drawing.Size(199, 73);
+            this.pnlOpponent.Size = new System.Drawing.Size(298, 112);
             this.pnlOpponent.TabIndex = 2;
             // 
             // lblHp2
             // 
             this.lblHp2.AutoSize = true;
-            this.lblHp2.Location = new System.Drawing.Point(52, 42);
-            this.lblHp2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblHp2.Location = new System.Drawing.Point(78, 65);
             this.lblHp2.Name = "lblHp2";
-            this.lblHp2.Size = new System.Drawing.Size(85, 13);
+            this.lblHp2.Size = new System.Drawing.Size(125, 20);
             this.lblHp2.TabIndex = 1;
             this.lblHp2.Text = "HP: HP Amount ";
             // 
             // lblDragonNameType2
             // 
             this.lblDragonNameType2.AutoSize = true;
-            this.lblDragonNameType2.Location = new System.Drawing.Point(42, 20);
-            this.lblDragonNameType2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDragonNameType2.Location = new System.Drawing.Point(63, 31);
             this.lblDragonNameType2.Name = "lblDragonNameType2";
-            this.lblDragonNameType2.Size = new System.Drawing.Size(109, 13);
+            this.lblDragonNameType2.Size = new System.Drawing.Size(159, 20);
             this.lblDragonNameType2.TabIndex = 0;
             this.lblDragonNameType2.Text = "Dragon Name + Type";
             // 
             // pnlBattleLog
             // 
             this.pnlBattleLog.Controls.Add(this.pnlBattleLogReport);
-            this.pnlBattleLog.Location = new System.Drawing.Point(8, 222);
-            this.pnlBattleLog.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlBattleLog.Location = new System.Drawing.Point(12, 342);
             this.pnlBattleLog.Name = "pnlBattleLog";
-            this.pnlBattleLog.Size = new System.Drawing.Size(583, 242);
+            this.pnlBattleLog.Size = new System.Drawing.Size(874, 372);
             this.pnlBattleLog.TabIndex = 3;
             // 
             // pnlBattleLogReport
@@ -154,52 +149,79 @@
             this.pnlBattleLogReport.AutoScroll = true;
             this.pnlBattleLogReport.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlBattleLogReport.Controls.Add(this.lblBattle);
-            this.pnlBattleLogReport.Location = new System.Drawing.Point(11, 18);
-            this.pnlBattleLogReport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlBattleLogReport.Location = new System.Drawing.Point(16, 28);
             this.pnlBattleLogReport.Name = "pnlBattleLogReport";
-            this.pnlBattleLogReport.Size = new System.Drawing.Size(565, 218);
+            this.pnlBattleLogReport.Size = new System.Drawing.Size(846, 334);
             this.pnlBattleLogReport.TabIndex = 0;
+            // 
+            // lblBattle
+            // 
+            this.lblBattle.AutoSize = true;
+            this.lblBattle.Location = new System.Drawing.Point(0, 0);
+            this.lblBattle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBattle.Name = "lblBattle";
+            this.lblBattle.Size = new System.Drawing.Size(100, 20);
+            this.lblBattle.TabIndex = 0;
+            this.lblBattle.Text = "Lorem ipsum";
             // 
             // lblOpponent
             // 
             this.lblOpponent.AutoSize = true;
-            this.lblOpponent.Location = new System.Drawing.Point(241, 57);
-            this.lblOpponent.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblOpponent.Location = new System.Drawing.Point(362, 88);
             this.lblOpponent.Name = "lblOpponent";
-            this.lblOpponent.Size = new System.Drawing.Size(86, 13);
+            this.lblOpponent.Size = new System.Drawing.Size(128, 20);
             this.lblOpponent.TabIndex = 0;
             this.lblOpponent.Text = "Opponent: name";
             // 
             // lblBattleLog
             // 
             this.lblBattleLog.AutoSize = true;
-            this.lblBattleLog.Location = new System.Drawing.Point(30, 216);
-            this.lblBattleLog.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblBattleLog.Location = new System.Drawing.Point(45, 332);
             this.lblBattleLog.Name = "lblBattleLog";
-            this.lblBattleLog.Size = new System.Drawing.Size(55, 13);
+            this.lblBattleLog.Size = new System.Drawing.Size(82, 20);
             this.lblBattleLog.TabIndex = 0;
             this.lblBattleLog.Text = "Battle Log";
             // 
-            // lblBattle
+            // picPlayer1Dragon
             // 
-            this.lblBattle.AutoSize = true;
-            this.lblBattle.Location = new System.Drawing.Point(0, 0);
-            this.lblBattle.Name = "lblBattle";
-            this.lblBattle.Size = new System.Drawing.Size(66, 13);
-            this.lblBattle.TabIndex = 0;
-            this.lblBattle.Text = "Lorem ipsum";
+            this.picPlayer1Dragon.Location = new System.Drawing.Point(691, 19);
+            this.picPlayer1Dragon.Name = "picPlayer1Dragon";
+            this.picPlayer1Dragon.Size = new System.Drawing.Size(153, 143);
+            this.picPlayer1Dragon.TabIndex = 4;
+            this.picPlayer1Dragon.TabStop = false;
+            // 
+            // lblVs
+            // 
+            this.lblVs.AutoSize = true;
+            this.lblVs.Location = new System.Drawing.Point(747, 165);
+            this.lblVs.Name = "lblVs";
+            this.lblVs.Size = new System.Drawing.Size(31, 20);
+            this.lblVs.TabIndex = 5;
+            this.lblVs.Text = "VS";
+            // 
+            // picPlayer2Dragon
+            // 
+            this.picPlayer2Dragon.Location = new System.Drawing.Point(691, 188);
+            this.picPlayer2Dragon.Name = "picPlayer2Dragon";
+            this.picPlayer2Dragon.Size = new System.Drawing.Size(153, 143);
+            this.picPlayer2Dragon.TabIndex = 6;
+            this.picPlayer2Dragon.TabStop = false;
             // 
             // TurnPlayerForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(599, 467);
+            this.ClientSize = new System.Drawing.Size(898, 718);
+            this.Controls.Add(this.picPlayer2Dragon);
+            this.Controls.Add(this.lblVs);
+            this.Controls.Add(this.picPlayer1Dragon);
             this.Controls.Add(this.lblBattleLog);
             this.Controls.Add(this.lblOpponent);
             this.Controls.Add(this.lblDragonNameType1);
             this.Controls.Add(this.pnlPlayerMove);
             this.Controls.Add(this.pnlOpponent);
             this.Controls.Add(this.pnlBattleLog);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "TurnPlayerForm";
             this.Text = "TurnPlayerForm";
             this.pnlPlayerMove.ResumeLayout(false);
@@ -209,6 +231,8 @@
             this.pnlBattleLog.ResumeLayout(false);
             this.pnlBattleLogReport.ResumeLayout(false);
             this.pnlBattleLogReport.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picPlayer1Dragon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPlayer2Dragon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -230,5 +254,8 @@
         private System.Windows.Forms.Label lblBattleLog ;
         private System.Windows.Forms.Panel pnlBattleLogReport;
         private System.Windows.Forms.Label lblBattle;
+        private System.Windows.Forms.PictureBox picPlayer1Dragon;
+        private System.Windows.Forms.Label lblVs;
+        private System.Windows.Forms.PictureBox picPlayer2Dragon;
     }
 }
