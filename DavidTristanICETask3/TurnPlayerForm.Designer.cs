@@ -39,20 +39,20 @@
             this.lblDragonNameType2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.lblOppMove3 = new System.Windows.Forms.Label();
+            this.lblOppTurn3 = new System.Windows.Forms.Label();
+            this.lblPlayerMove3 = new System.Windows.Forms.Label();
+            this.lblPlayerTurn3 = new System.Windows.Forms.Label();
+            this.lblOppMove2 = new System.Windows.Forms.Label();
+            this.lblOppTurn2 = new System.Windows.Forms.Label();
+            this.lblPlayerMove2 = new System.Windows.Forms.Label();
+            this.lblPlayerTurn2 = new System.Windows.Forms.Label();
+            this.lblOppMove1 = new System.Windows.Forms.Label();
+            this.lblOppTurn1 = new System.Windows.Forms.Label();
+            this.lblPMove1 = new System.Windows.Forms.Label();
+            this.lblPlayerTurn1 = new System.Windows.Forms.Label();
             this.lblOpponent = new System.Windows.Forms.Label();
             this.lblBattleLog = new System.Windows.Forms.Label();
-            this.lblPlayerTurn1 = new System.Windows.Forms.Label();
-            this.lblPMove1 = new System.Windows.Forms.Label();
-            this.lblOppTurn1 = new System.Windows.Forms.Label();
-            this.lblOppMove1 = new System.Windows.Forms.Label();
-            this.lblPlayerTurn2 = new System.Windows.Forms.Label();
-            this.lblPlayerMove2 = new System.Windows.Forms.Label();
-            this.lblOppTurn2 = new System.Windows.Forms.Label();
-            this.lblOppMove2 = new System.Windows.Forms.Label();
-            this.lblPlayerTurn3 = new System.Windows.Forms.Label();
-            this.lblPlayerMove3 = new System.Windows.Forms.Label();
-            this.lblOppTurn3 = new System.Windows.Forms.Label();
-            this.lblOppMove3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -172,6 +172,115 @@
             this.panel4.Size = new System.Drawing.Size(846, 335);
             this.panel4.TabIndex = 0;
             // 
+            // lblOppMove3
+            // 
+            this.lblOppMove3.AutoSize = true;
+            this.lblOppMove3.Location = new System.Drawing.Point(6, 310);
+            this.lblOppMove3.Name = "lblOppMove3";
+            this.lblOppMove3.Size = new System.Drawing.Size(133, 20);
+            this.lblOppMove3.TabIndex = 11;
+            this.lblOppMove3.Text = "Opponent\'s Move";
+            // 
+            // lblOppTurn3
+            // 
+            this.lblOppTurn3.AutoSize = true;
+            this.lblOppTurn3.Location = new System.Drawing.Point(6, 290);
+            this.lblOppTurn3.Name = "lblOppTurn3";
+            this.lblOppTurn3.Size = new System.Drawing.Size(131, 20);
+            this.lblOppTurn3.TabIndex = 10;
+            this.lblOppTurn3.Text = "Opponent\'s Turn:";
+            // 
+            // lblPlayerMove3
+            // 
+            this.lblPlayerMove3.AutoSize = true;
+            this.lblPlayerMove3.Location = new System.Drawing.Point(8, 248);
+            this.lblPlayerMove3.Name = "lblPlayerMove3";
+            this.lblPlayerMove3.Size = new System.Drawing.Size(90, 20);
+            this.lblPlayerMove3.TabIndex = 9;
+            this.lblPlayerMove3.Text = "PlayerMove";
+            this.lblPlayerMove3.Click += new System.EventHandler(this.lblPlayerMove3_Click);
+            // 
+            // lblPlayerTurn3
+            // 
+            this.lblPlayerTurn3.AutoSize = true;
+            this.lblPlayerTurn3.Location = new System.Drawing.Point(6, 228);
+            this.lblPlayerTurn3.Name = "lblPlayerTurn3";
+            this.lblPlayerTurn3.Size = new System.Drawing.Size(92, 20);
+            this.lblPlayerTurn3.TabIndex = 8;
+            this.lblPlayerTurn3.Text = "Player Turn:";
+            // 
+            // lblOppMove2
+            // 
+            this.lblOppMove2.AutoSize = true;
+            this.lblOppMove2.Location = new System.Drawing.Point(6, 191);
+            this.lblOppMove2.Name = "lblOppMove2";
+            this.lblOppMove2.Size = new System.Drawing.Size(133, 20);
+            this.lblOppMove2.TabIndex = 7;
+            this.lblOppMove2.Text = "Opponent\'s move";
+            // 
+            // lblOppTurn2
+            // 
+            this.lblOppTurn2.AutoSize = true;
+            this.lblOppTurn2.Location = new System.Drawing.Point(4, 171);
+            this.lblOppTurn2.Name = "lblOppTurn2";
+            this.lblOppTurn2.Size = new System.Drawing.Size(131, 20);
+            this.lblOppTurn2.TabIndex = 6;
+            this.lblOppTurn2.Text = "Opponent\'s Turn:";
+            // 
+            // lblPlayerMove2
+            // 
+            this.lblPlayerMove2.AutoSize = true;
+            this.lblPlayerMove2.Location = new System.Drawing.Point(6, 135);
+            this.lblPlayerMove2.Name = "lblPlayerMove2";
+            this.lblPlayerMove2.Size = new System.Drawing.Size(94, 20);
+            this.lblPlayerMove2.TabIndex = 5;
+            this.lblPlayerMove2.Text = "Player Move";
+            // 
+            // lblPlayerTurn2
+            // 
+            this.lblPlayerTurn2.AutoSize = true;
+            this.lblPlayerTurn2.Location = new System.Drawing.Point(6, 115);
+            this.lblPlayerTurn2.Name = "lblPlayerTurn2";
+            this.lblPlayerTurn2.Size = new System.Drawing.Size(92, 20);
+            this.lblPlayerTurn2.TabIndex = 4;
+            this.lblPlayerTurn2.Text = "Player Turn:";
+            // 
+            // lblOppMove1
+            // 
+            this.lblOppMove1.AutoSize = true;
+            this.lblOppMove1.Location = new System.Drawing.Point(4, 79);
+            this.lblOppMove1.Name = "lblOppMove1";
+            this.lblOppMove1.Size = new System.Drawing.Size(133, 20);
+            this.lblOppMove1.TabIndex = 3;
+            this.lblOppMove1.Text = "Opponent\'s Move";
+            // 
+            // lblOppTurn1
+            // 
+            this.lblOppTurn1.AutoSize = true;
+            this.lblOppTurn1.Location = new System.Drawing.Point(3, 55);
+            this.lblOppTurn1.Name = "lblOppTurn1";
+            this.lblOppTurn1.Size = new System.Drawing.Size(131, 20);
+            this.lblOppTurn1.TabIndex = 2;
+            this.lblOppTurn1.Text = "Opponent\'s Turn:";
+            // 
+            // lblPMove1
+            // 
+            this.lblPMove1.AutoSize = true;
+            this.lblPMove1.Location = new System.Drawing.Point(4, 24);
+            this.lblPMove1.Name = "lblPMove1";
+            this.lblPMove1.Size = new System.Drawing.Size(94, 20);
+            this.lblPMove1.TabIndex = 1;
+            this.lblPMove1.Text = "Player Move";
+            // 
+            // lblPlayerTurn1
+            // 
+            this.lblPlayerTurn1.AutoSize = true;
+            this.lblPlayerTurn1.Location = new System.Drawing.Point(4, 4);
+            this.lblPlayerTurn1.Name = "lblPlayerTurn1";
+            this.lblPlayerTurn1.Size = new System.Drawing.Size(92, 20);
+            this.lblPlayerTurn1.TabIndex = 0;
+            this.lblPlayerTurn1.Text = "Player Turn:";
+            // 
             // lblOpponent
             // 
             this.lblOpponent.AutoSize = true;
@@ -191,115 +300,6 @@
             this.lblBattleLog.TabIndex = 0;
             this.lblBattleLog.Text = "Battle Log";
             // 
-            // lblPlayerTurn1
-            // 
-            this.lblPlayerTurn1.AutoSize = true;
-            this.lblPlayerTurn1.Location = new System.Drawing.Point(4, 4);
-            this.lblPlayerTurn1.Name = "lblPlayerTurn1";
-            this.lblPlayerTurn1.Size = new System.Drawing.Size(92, 20);
-            this.lblPlayerTurn1.TabIndex = 0;
-            this.lblPlayerTurn1.Text = "Player Turn:";
-            // 
-            // lblPMove1
-            // 
-            this.lblPMove1.AutoSize = true;
-            this.lblPMove1.Location = new System.Drawing.Point(4, 24);
-            this.lblPMove1.Name = "lblPMove1";
-            this.lblPMove1.Size = new System.Drawing.Size(94, 20);
-            this.lblPMove1.TabIndex = 1;
-            this.lblPMove1.Text = "Player Move";
-            // 
-            // lblOppTurn1
-            // 
-            this.lblOppTurn1.AutoSize = true;
-            this.lblOppTurn1.Location = new System.Drawing.Point(3, 55);
-            this.lblOppTurn1.Name = "lblOppTurn1";
-            this.lblOppTurn1.Size = new System.Drawing.Size(131, 20);
-            this.lblOppTurn1.TabIndex = 2;
-            this.lblOppTurn1.Text = "Opponent\'s Turn:";
-            // 
-            // lblOppMove1
-            // 
-            this.lblOppMove1.AutoSize = true;
-            this.lblOppMove1.Location = new System.Drawing.Point(4, 79);
-            this.lblOppMove1.Name = "lblOppMove1";
-            this.lblOppMove1.Size = new System.Drawing.Size(133, 20);
-            this.lblOppMove1.TabIndex = 3;
-            this.lblOppMove1.Text = "Opponent\'s Move";
-            // 
-            // lblPlayerTurn2
-            // 
-            this.lblPlayerTurn2.AutoSize = true;
-            this.lblPlayerTurn2.Location = new System.Drawing.Point(6, 115);
-            this.lblPlayerTurn2.Name = "lblPlayerTurn2";
-            this.lblPlayerTurn2.Size = new System.Drawing.Size(92, 20);
-            this.lblPlayerTurn2.TabIndex = 4;
-            this.lblPlayerTurn2.Text = "Player Turn:";
-            // 
-            // lblPlayerMove2
-            // 
-            this.lblPlayerMove2.AutoSize = true;
-            this.lblPlayerMove2.Location = new System.Drawing.Point(6, 135);
-            this.lblPlayerMove2.Name = "lblPlayerMove2";
-            this.lblPlayerMove2.Size = new System.Drawing.Size(94, 20);
-            this.lblPlayerMove2.TabIndex = 5;
-            this.lblPlayerMove2.Text = "Player Move";
-            // 
-            // lblOppTurn2
-            // 
-            this.lblOppTurn2.AutoSize = true;
-            this.lblOppTurn2.Location = new System.Drawing.Point(4, 171);
-            this.lblOppTurn2.Name = "lblOppTurn2";
-            this.lblOppTurn2.Size = new System.Drawing.Size(131, 20);
-            this.lblOppTurn2.TabIndex = 6;
-            this.lblOppTurn2.Text = "Opponent\'s Turn:";
-            // 
-            // lblOppMove2
-            // 
-            this.lblOppMove2.AutoSize = true;
-            this.lblOppMove2.Location = new System.Drawing.Point(6, 191);
-            this.lblOppMove2.Name = "lblOppMove2";
-            this.lblOppMove2.Size = new System.Drawing.Size(133, 20);
-            this.lblOppMove2.TabIndex = 7;
-            this.lblOppMove2.Text = "Opponent\'s move";
-            // 
-            // lblPlayerTurn3
-            // 
-            this.lblPlayerTurn3.AutoSize = true;
-            this.lblPlayerTurn3.Location = new System.Drawing.Point(6, 228);
-            this.lblPlayerTurn3.Name = "lblPlayerTurn3";
-            this.lblPlayerTurn3.Size = new System.Drawing.Size(92, 20);
-            this.lblPlayerTurn3.TabIndex = 8;
-            this.lblPlayerTurn3.Text = "Player Turn:";
-            // 
-            // lblPlayerMove3
-            // 
-            this.lblPlayerMove3.AutoSize = true;
-            this.lblPlayerMove3.Location = new System.Drawing.Point(8, 248);
-            this.lblPlayerMove3.Name = "lblPlayerMove3";
-            this.lblPlayerMove3.Size = new System.Drawing.Size(90, 20);
-            this.lblPlayerMove3.TabIndex = 9;
-            this.lblPlayerMove3.Text = "PlayerMove";
-            this.lblPlayerMove3.Click += new System.EventHandler(this.lblPlayerMove3_Click);
-            // 
-            // lblOppTurn3
-            // 
-            this.lblOppTurn3.AutoSize = true;
-            this.lblOppTurn3.Location = new System.Drawing.Point(6, 290);
-            this.lblOppTurn3.Name = "lblOppTurn3";
-            this.lblOppTurn3.Size = new System.Drawing.Size(131, 20);
-            this.lblOppTurn3.TabIndex = 10;
-            this.lblOppTurn3.Text = "Opponent\'s Turn:";
-            // 
-            // lblOppMove3
-            // 
-            this.lblOppMove3.AutoSize = true;
-            this.lblOppMove3.Location = new System.Drawing.Point(6, 310);
-            this.lblOppMove3.Name = "lblOppMove3";
-            this.lblOppMove3.Size = new System.Drawing.Size(133, 20);
-            this.lblOppMove3.TabIndex = 11;
-            this.lblOppMove3.Text = "Opponent\'s Move";
-            // 
             // TurnPlayerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -314,7 +314,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "TurnPlayerForm";
             this.Text = "TurnPlayerForm";
-            this.FormClosing += this.TurnPlayerForm_Exit; // https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.form.formclosing?view=windowsdesktop-8.0#system-windows-forms-form-formclosing
+            this.Load += new System.EventHandler(this.TurnPlayerForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
