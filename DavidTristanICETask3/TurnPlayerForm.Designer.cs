@@ -1,4 +1,6 @@
-﻿namespace DavidTristanICETask3
+﻿using System.Windows.Forms;
+
+namespace DavidTristanICETask3
 {
     partial class TurnPlayerForm
     {
@@ -29,16 +31,16 @@
         private void InitializeComponent()
         {
             this.lblDragonNameType1 = new System.Windows.Forms.Label();
-            this.pnlPlayerMove = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.btnBlock = new System.Windows.Forms.Button();
             this.btnSpAttack = new System.Windows.Forms.Button();
             this.lblHp1 = new System.Windows.Forms.Label();
             this.btnAttack = new System.Windows.Forms.Button();
-            this.pnlOpponent = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.lblHp2 = new System.Windows.Forms.Label();
             this.lblDragonNameType2 = new System.Windows.Forms.Label();
-            this.pnlBattleLog = new System.Windows.Forms.Panel();
-            this.pnlBattleLogReport = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.lblOppMove3 = new System.Windows.Forms.Label();
             this.lblOppTurn3 = new System.Windows.Forms.Label();
             this.lblPlayerMove3 = new System.Windows.Forms.Label();
@@ -53,10 +55,10 @@
             this.lblPlayerTurn1 = new System.Windows.Forms.Label();
             this.lblOpponent = new System.Windows.Forms.Label();
             this.lblBattleLog = new System.Windows.Forms.Label();
-            this.pnlPlayerMove.SuspendLayout();
-            this.pnlOpponent.SuspendLayout();
-            this.pnlBattleLog.SuspendLayout();
-            this.pnlBattleLogReport.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblDragonNameType1
@@ -69,36 +71,34 @@
             this.lblDragonNameType1.Text = "Dragon Name + type";
             this.lblDragonNameType1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // pnlPlayerMove
+            // panel1
             // 
-            this.pnlPlayerMove.Controls.Add(this.btnBlock);
-            this.pnlPlayerMove.Controls.Add(this.btnSpAttack);
-            this.pnlPlayerMove.Controls.Add(this.lblHp1);
-            this.pnlPlayerMove.Controls.Add(this.btnAttack);
-            this.pnlPlayerMove.Location = new System.Drawing.Point(12, 21);
-            this.pnlPlayerMove.Name = "pnlPlayerMove";
-            this.pnlPlayerMove.Size = new System.Drawing.Size(241, 286);
-            this.pnlPlayerMove.TabIndex = 1;
+            this.panel1.Controls.Add(this.btnBlock);
+            this.panel1.Controls.Add(this.btnSpAttack);
+            this.panel1.Controls.Add(this.lblHp1);
+            this.panel1.Controls.Add(this.btnAttack);
+            this.panel1.Location = new System.Drawing.Point(12, 21);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(241, 286);
+            this.panel1.TabIndex = 1;
             // 
             // btnBlock
             // 
-            this.btnBlock.BackColor = System.Drawing.Color.Transparent;
             this.btnBlock.Location = new System.Drawing.Point(37, 198);
             this.btnBlock.Name = "btnBlock";
             this.btnBlock.Size = new System.Drawing.Size(169, 57);
             this.btnBlock.TabIndex = 4;
             this.btnBlock.Text = "Block";
-            this.btnBlock.UseVisualStyleBackColor = false;
+            this.btnBlock.UseVisualStyleBackColor = true;
             // 
             // btnSpAttack
             // 
-            this.btnSpAttack.BackColor = System.Drawing.Color.Transparent;
             this.btnSpAttack.Location = new System.Drawing.Point(37, 135);
             this.btnSpAttack.Name = "btnSpAttack";
             this.btnSpAttack.Size = new System.Drawing.Size(169, 57);
             this.btnSpAttack.TabIndex = 3;
             this.btnSpAttack.Text = "Special Attack";
-            this.btnSpAttack.UseVisualStyleBackColor = false;
+            this.btnSpAttack.UseVisualStyleBackColor = true;
             // 
             // lblHp1
             // 
@@ -112,25 +112,21 @@
             // 
             // btnAttack
             // 
-            this.btnAttack.BackColor = System.Drawing.Color.Transparent;
             this.btnAttack.Location = new System.Drawing.Point(37, 67);
             this.btnAttack.Name = "btnAttack";
             this.btnAttack.Size = new System.Drawing.Size(169, 62);
             this.btnAttack.TabIndex = 0;
             this.btnAttack.Text = "Attack";
-            this.btnAttack.UseVisualStyleBackColor = false;
-            this.btnAttack.Click += new System.EventHandler(this.btnAttack_Click);
+            this.btnAttack.UseVisualStyleBackColor = true;
             // 
-            // pnlOpponent
+            // panel2
             // 
-            this.pnlOpponent.BackColor = System.Drawing.Color.Transparent;
-            this.pnlOpponent.Controls.Add(this.lblHp2);
-            this.pnlOpponent.Controls.Add(this.lblDragonNameType2);
-            this.pnlOpponent.Location = new System.Drawing.Point(342, 100);
-            this.pnlOpponent.Name = "pnlOpponent";
-            this.pnlOpponent.Size = new System.Drawing.Size(298, 113);
-            this.pnlOpponent.TabIndex = 2;
-            this.pnlOpponent.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            this.panel2.Controls.Add(this.lblHp2);
+            this.panel2.Controls.Add(this.lblDragonNameType2);
+            this.panel2.Location = new System.Drawing.Point(342, 100);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(298, 113);
+            this.panel2.TabIndex = 2;
             // 
             // lblHp2
             // 
@@ -150,33 +146,33 @@
             this.lblDragonNameType2.TabIndex = 0;
             this.lblDragonNameType2.Text = "Dragon Name + Type";
             // 
-            // pnlBattleLog
+            // panel3
             // 
-            this.pnlBattleLog.Controls.Add(this.pnlBattleLogReport);
-            this.pnlBattleLog.Location = new System.Drawing.Point(12, 342);
-            this.pnlBattleLog.Name = "pnlBattleLog";
-            this.pnlBattleLog.Size = new System.Drawing.Size(875, 372);
-            this.pnlBattleLog.TabIndex = 3;
+            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Location = new System.Drawing.Point(12, 342);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(875, 372);
+            this.panel3.TabIndex = 3;
             // 
-            // pnlBattleLogReport
+            // panel4
             // 
-            this.pnlBattleLogReport.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlBattleLogReport.Controls.Add(this.lblOppMove3);
-            this.pnlBattleLogReport.Controls.Add(this.lblOppTurn3);
-            this.pnlBattleLogReport.Controls.Add(this.lblPlayerMove3);
-            this.pnlBattleLogReport.Controls.Add(this.lblPlayerTurn3);
-            this.pnlBattleLogReport.Controls.Add(this.lblOppMove2);
-            this.pnlBattleLogReport.Controls.Add(this.lblOppTurn2);
-            this.pnlBattleLogReport.Controls.Add(this.lblPlayerMove2);
-            this.pnlBattleLogReport.Controls.Add(this.lblPlayerTurn2);
-            this.pnlBattleLogReport.Controls.Add(this.lblOppMove1);
-            this.pnlBattleLogReport.Controls.Add(this.lblOppTurn1);
-            this.pnlBattleLogReport.Controls.Add(this.lblPMove1);
-            this.pnlBattleLogReport.Controls.Add(this.lblPlayerTurn1);
-            this.pnlBattleLogReport.Location = new System.Drawing.Point(16, 27);
-            this.pnlBattleLogReport.Name = "pnlBattleLogReport";
-            this.pnlBattleLogReport.Size = new System.Drawing.Size(846, 335);
-            this.pnlBattleLogReport.TabIndex = 0;
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.lblOppMove3);
+            this.panel4.Controls.Add(this.lblOppTurn3);
+            this.panel4.Controls.Add(this.lblPlayerMove3);
+            this.panel4.Controls.Add(this.lblPlayerTurn3);
+            this.panel4.Controls.Add(this.lblOppMove2);
+            this.panel4.Controls.Add(this.lblOppTurn2);
+            this.panel4.Controls.Add(this.lblPlayerMove2);
+            this.panel4.Controls.Add(this.lblPlayerTurn2);
+            this.panel4.Controls.Add(this.lblOppMove1);
+            this.panel4.Controls.Add(this.lblOppTurn1);
+            this.panel4.Controls.Add(this.lblPMove1);
+            this.panel4.Controls.Add(this.lblPlayerTurn1);
+            this.panel4.Location = new System.Drawing.Point(16, 27);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(846, 335);
+            this.panel4.TabIndex = 0;
             // 
             // lblOppMove3
             // 
@@ -314,9 +310,9 @@
             this.Controls.Add(this.lblBattleLog);
             this.Controls.Add(this.lblOpponent);
             this.Controls.Add(this.lblDragonNameType1);
-            this.Controls.Add(this.pnlPlayerMove);
-            this.Controls.Add(this.pnlOpponent);
-            this.Controls.Add(this.pnlBattleLog);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel3);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "TurnPlayerForm";
             this.Text = "TurnPlayerForm";
@@ -336,9 +332,9 @@
         #endregion
 
         private System.Windows.Forms.Label lblDragonNameType1;
-        private System.Windows.Forms.Panel pnlPlayerMove;
-        private System.Windows.Forms.Panel pnlOpponent;
-        private System.Windows.Forms.Panel pnlBattleLog;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btnBlock;
         private System.Windows.Forms.Button btnSpAttack;
         private System.Windows.Forms.Label lblHp1;
@@ -347,7 +343,7 @@
         private System.Windows.Forms.Label lblDragonNameType2;
         private System.Windows.Forms.Label lblHp2;
         private System.Windows.Forms.Label lblBattleLog;
-        private System.Windows.Forms.Panel pnlBattleLogReport;
+        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label lblPMove1;
         private System.Windows.Forms.Label lblPlayerTurn1;
         private System.Windows.Forms.Label lblOppTurn2;
@@ -362,3 +358,5 @@
         private System.Windows.Forms.Label lblOppMove3;
     }
 }
+message.txt
+17 KB
