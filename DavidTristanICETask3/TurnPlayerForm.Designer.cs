@@ -320,14 +320,14 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "TurnPlayerForm";
             this.Text = "TurnPlayerForm";
-            this.Load += new System.EventHandler(this.TurnPlayerForm_Load);
-            this.pnlPlayerMove.ResumeLayout(false);
-            this.pnlPlayerMove.PerformLayout();
-            this.pnlOpponent.ResumeLayout(false);
-            this.pnlOpponent.PerformLayout();
-            this.pnlBattleLog.ResumeLayout(false);
-            this.pnlBattleLogReport.ResumeLayout(false);
-            this.pnlBattleLogReport.PerformLayout();
+            this.FormClosing += TurnPlayerForm_Exit;
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
