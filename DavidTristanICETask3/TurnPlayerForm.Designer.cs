@@ -314,7 +314,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "TurnPlayerForm";
             this.Text = "TurnPlayerForm";
-            this.Load += new System.EventHandler(this.TurnPlayerForm_Load);
+            this.FormClosing += TurnPlayerForm_Exit;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
