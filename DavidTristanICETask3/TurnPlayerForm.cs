@@ -21,10 +21,9 @@ namespace DavidTristanICETask3
             lblDragonNameType1.BackColor = Color.LightGray;
             pnlPlayerMove.BackColor = Color.LightGray;
 
-            this.FormClosing += TurnPlayerForm_FormClosing; // https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.form.formclosing?view=windowsdesktop-8.0#system-windows-forms-form-formclosing
+            this.FormClosing += TurnPlayerForm_FormClosing;
         }
 
-        // https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.formclosingeventhandler?view=windowsdesktop-8.0
         private void TurnPlayerForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
