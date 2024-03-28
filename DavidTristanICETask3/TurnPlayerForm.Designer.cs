@@ -150,7 +150,7 @@
             // pnlBattleLogReport
             // 
             this.pnlBattleLogReport.AutoScroll = true;
-            this.pnlBattleLogReport.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlBattleLogReport.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pnlBattleLogReport.Controls.Add(this.lblBattle);
             this.pnlBattleLogReport.Location = new System.Drawing.Point(16, 28);
             this.pnlBattleLogReport.Name = "pnlBattleLogReport";
@@ -187,7 +187,7 @@
             // 
             // picPlayer1Dragon
             // 
-            this.picPlayer1Dragon.Location = new System.Drawing.Point(680, 5);
+            this.picPlayer1Dragon.Location = new System.Drawing.Point(680, 13);
             this.picPlayer1Dragon.Name = "picPlayer1Dragon";
             this.picPlayer1Dragon.Size = new System.Drawing.Size(181, 160);
             this.picPlayer1Dragon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -197,7 +197,7 @@
             // lblVs
             // 
             this.lblVs.AutoSize = true;
-            this.lblVs.Location = new System.Drawing.Point(757, 176);
+            this.lblVs.Location = new System.Drawing.Point(751, 176);
             this.lblVs.Name = "lblVs";
             this.lblVs.Size = new System.Drawing.Size(31, 20);
             this.lblVs.TabIndex = 5;
