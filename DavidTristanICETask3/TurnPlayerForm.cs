@@ -12,7 +12,8 @@ namespace DavidTristanICETask3
             btnAttack.BackColor = Color.Red;
             btnSpAttack.BackColor = Color.Yellow;
             btnBlock.BackColor = Color.Cyan;
-            lblHp2.ForeColor = Color.White;
+            lblOpponent.ForeColor = Color.Maroon;
+
 
         }
 
