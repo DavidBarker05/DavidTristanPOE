@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace DavidTristanICETask3
@@ -37,6 +38,16 @@ namespace DavidTristanICETask3
         }
 
         private void TurnPlayerForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+           
+        }
+
+        private void btnAttack_Click(object sender, EventArgs e)
         {
 
         }
