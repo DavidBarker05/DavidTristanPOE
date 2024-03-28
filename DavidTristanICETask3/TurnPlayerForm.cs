@@ -21,10 +21,5 @@ namespace DavidTristanICETask3
         {
             Application.Exit();
         }
-
-        private void picPlayer1Dragon_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
