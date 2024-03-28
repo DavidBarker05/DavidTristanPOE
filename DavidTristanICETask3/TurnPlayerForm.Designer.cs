@@ -115,15 +115,15 @@
             this.pnlOpponent.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlOpponent.Controls.Add(this.lblHp2);
             this.pnlOpponent.Controls.Add(this.lblDragonNameType2);
-            this.pnlOpponent.Location = new System.Drawing.Point(342, 100);
+            this.pnlOpponent.Location = new System.Drawing.Point(333, 94);
             this.pnlOpponent.Name = "pnlOpponent";
-            this.pnlOpponent.Size = new System.Drawing.Size(298, 113);
+            this.pnlOpponent.Size = new System.Drawing.Size(298, 177);
             this.pnlOpponent.TabIndex = 2;
             // 
             // lblHp2
             // 
             this.lblHp2.AutoSize = true;
-            this.lblHp2.Location = new System.Drawing.Point(78, 65);
+            this.lblHp2.Location = new System.Drawing.Point(82, 94);
             this.lblHp2.Name = "lblHp2";
             this.lblHp2.Size = new System.Drawing.Size(125, 20);
             this.lblHp2.TabIndex = 1;
@@ -132,7 +132,7 @@
             // lblDragonNameType2
             // 
             this.lblDragonNameType2.AutoSize = true;
-            this.lblDragonNameType2.Location = new System.Drawing.Point(63, 31);
+            this.lblDragonNameType2.Location = new System.Drawing.Point(60, 39);
             this.lblDragonNameType2.Name = "lblDragonNameType2";
             this.lblDragonNameType2.Size = new System.Drawing.Size(159, 20);
             this.lblDragonNameType2.TabIndex = 0;
@@ -170,11 +170,12 @@
             // lblOpponent
             // 
             this.lblOpponent.AutoSize = true;
-            this.lblOpponent.Location = new System.Drawing.Point(418, 89);
+            this.lblOpponent.Location = new System.Drawing.Point(416, 83);
             this.lblOpponent.Name = "lblOpponent";
             this.lblOpponent.Size = new System.Drawing.Size(128, 20);
             this.lblOpponent.TabIndex = 0;
             this.lblOpponent.Text = "Opponent: name";
+            this.lblOpponent.Click += new System.EventHandler(this.lblOpponent_Click);
             // 
             // lblBattleLog
             // 
@@ -219,9 +220,9 @@
             this.ClientSize = new System.Drawing.Size(912, 743);
             this.Controls.Add(this.picPlayer2Dragon);
             this.Controls.Add(this.lblVs);
+            this.Controls.Add(this.lblOpponent);
             this.Controls.Add(this.picPlayer1Dragon);
             this.Controls.Add(this.lblBattleLog);
-            this.Controls.Add(this.lblOpponent);
             this.Controls.Add(this.lblDragonNameType1);
             this.Controls.Add(this.pnlPlayerMove);
             this.Controls.Add(this.pnlOpponent);
