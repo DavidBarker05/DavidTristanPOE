@@ -8,6 +8,7 @@ namespace DavidTristanICETask3
     {
 
         private bool Player1Saved = false, Player2Saved = false;
+        private TurnPlayerForm TPF = new TurnPlayerForm();
 
         public StartGameForm()
         {
@@ -141,7 +142,7 @@ namespace DavidTristanICETask3
         {
             if (Player1Saved && Player2Saved)
             {
-                (new TurnPlayerForm()).Show();
+                TPF.Show();
                 this.Hide();
             }
         }
