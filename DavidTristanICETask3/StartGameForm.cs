@@ -52,6 +52,7 @@ namespace DavidTristanICETask3
             rbtnWindDragon1.ForeColor = Color.Yellow;
             rbtnEarthDragon1.ForeColor = Color.Yellow;
             picDragon1.Image = Properties.Resources.Fire_Dragon;
+            TPF.GetPicPlayer1Dragon().Image = Properties.Resources.Fire_Dragon;
         }
 
         private void rbtnIceDragon1_CheckedChanged(object sender, EventArgs e)
@@ -64,6 +65,7 @@ namespace DavidTristanICETask3
             rbtnWindDragon1.ForeColor = Color.Blue;
             rbtnEarthDragon1.ForeColor = Color.Blue;
             picDragon1.Image = Properties.Resources.Ice_Dragon;
+            TPF.GetPicPlayer1Dragon().Image = Properties.Resources.Ice_Dragon;
         }
 
         private void rbtnWindDragon1_CheckedChanged(object sender, EventArgs e)
@@ -76,6 +78,7 @@ namespace DavidTristanICETask3
             rbtnWindDragon1.ForeColor = Color.DarkSlateGray;
             rbtnEarthDragon1.ForeColor = Color.DarkSlateGray;
             picDragon1.Image = Properties.Resources.Wind_Dragon;
+            TPF.GetPicPlayer1Dragon().Image = Properties.Resources.Wind_Dragon;
         }
 
         private void rbtnEarthDragon1_CheckedChanged(object sender, EventArgs e)
@@ -88,6 +91,7 @@ namespace DavidTristanICETask3
             rbtnWindDragon1.ForeColor = Color.LimeGreen;
             rbtnEarthDragon1.ForeColor = Color.LimeGreen;
             picDragon1.Image = Properties.Resources.Earth_Dragon;
+            TPF.GetPicPlayer1Dragon().Image = Properties.Resources.Earth_Dragon;
         }
 
         private void rbtnFireDragon2_CheckedChanged(object sender, EventArgs e)
@@ -100,6 +104,7 @@ namespace DavidTristanICETask3
             rbtnWindDragon2.ForeColor = Color.Yellow;
             rbtnEarthDragon2.ForeColor = Color.Yellow;
             picDragon2.Image = Properties.Resources.Fire_Dragon;
+            TPF.GetPicPlayer2Dragon().Image = Properties.Resources.Fire_Dragon;
         }
 
         private void rbtnIceDragon2_CheckedChanged(object sender, EventArgs e)
@@ -112,6 +117,7 @@ namespace DavidTristanICETask3
             rbtnWindDragon2.ForeColor = Color.Blue;
             rbtnEarthDragon2.ForeColor = Color.Blue;
             picDragon2.Image = Properties.Resources.Ice_Dragon;
+            TPF.GetPicPlayer2Dragon().Image = Properties.Resources.Ice_Dragon;
         }
 
         private void rbtnWindDragon2_CheckedChanged(object sender, EventArgs e)
@@ -124,6 +130,7 @@ namespace DavidTristanICETask3
             rbtnWindDragon2.ForeColor = Color.DarkSlateGray;
             rbtnEarthDragon2.ForeColor = Color.DarkSlateGray;
             picDragon2.Image = Properties.Resources.Wind_Dragon;
+            TPF.GetPicPlayer2Dragon().Image = Properties.Resources.Wind_Dragon;
         }
 
         private void rbtnEarthDragon2_CheckedChanged(object sender, EventArgs e)
@@ -136,6 +143,7 @@ namespace DavidTristanICETask3
             rbtnWindDragon2.ForeColor = Color.LimeGreen;
             rbtnEarthDragon2.ForeColor = Color.LimeGreen;
             picDragon2.Image = Properties.Resources.Earth_Dragon;
+            TPF.GetPicPlayer2Dragon().Image = Properties.Resources.Earth_Dragon;
         }
 
         private void btnStartGame_Click(object sender, EventArgs e)
