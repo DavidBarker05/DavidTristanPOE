@@ -9,6 +9,12 @@ namespace DavidTristanICETask3
         public TurnPlayerForm()
         {
             InitializeComponent();
+            btnAttack.BackColor = Color.Red;
+            btnSpAttack.BackColor = Color.Yellow;
+            btnBlock.BackColor = Color.Cyan;
+            lblOpponent.ForeColor = Color.Maroon;
+
+
         }
 
         // https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.formclosingeventhandler?view=windowsdesktop-8.0
