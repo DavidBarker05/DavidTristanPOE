@@ -216,19 +216,19 @@
 
         #endregion
 
-        public System.Windows.Forms.Label lblDragonNameType1 { get; private set; }
-        public System.Windows.Forms.Panel pnlPlayerMove { get; private set; }
-        public System.Windows.Forms.Panel pnlOpponent { get; private set; }
-        public System.Windows.Forms.Panel pnlBattleLog { get; private set; }
-        public System.Windows.Forms.Button btnBlock { get; private set; }
-        public System.Windows.Forms.Button btnSpAttack { get; private set; }
-        public System.Windows.Forms.Label lblHp1 { get; private set; }
-        public System.Windows.Forms.Button btnAttack { get; private set; }
-        public System.Windows.Forms.Label lblOpponent { get; private set; }
-        public System.Windows.Forms.Label lblDragonNameType2 { get; private set; }
-        public System.Windows.Forms.Label lblHp2 { get; private set; }
-        public System.Windows.Forms.Label lblBattleLog { get; private set; }
-        public System.Windows.Forms.Panel pnlBattleLogReport { get; private set; }
-        public System.Windows.Forms.Label lblBattle { get; private set; }
+        private System.Windows.Forms.Label lblDragonNameType1;
+        private System.Windows.Forms.Panel pnlPlayerMove;
+        private System.Windows.Forms.Panel pnlOpponent;
+        private System.Windows.Forms.Panel pnlBattleLog;
+        private System.Windows.Forms.Button btnBlock;
+        private System.Windows.Forms.Button btnSpAttack;
+        private System.Windows.Forms.Label lblHp1;
+        private System.Windows.Forms.Button btnAttack;
+        private System.Windows.Forms.Label lblOpponent;
+        private System.Windows.Forms.Label lblDragonNameType2;
+        private System.Windows.Forms.Label lblHp2;
+        private System.Windows.Forms.Label lblBattleLog ;
+        private System.Windows.Forms.Panel pnlBattleLogReport;
+        private System.Windows.Forms.Label lblBattle;
     }
 }
