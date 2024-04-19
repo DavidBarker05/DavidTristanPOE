@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.pnlPlayer1 = new System.Windows.Forms.Panel();
+            this.picDragon1 = new System.Windows.Forms.PictureBox();
             this.btnSave1 = new System.Windows.Forms.Button();
             this.lblDragonType1 = new System.Windows.Forms.Label();
             this.pnlDragonType1 = new System.Windows.Forms.Panel();
@@ -42,6 +43,7 @@
             this.lblPlayerName1 = new System.Windows.Forms.Label();
             this.btnStartGame = new System.Windows.Forms.Button();
             this.pnlPlayer2 = new System.Windows.Forms.Panel();
+            this.picDragon2 = new System.Windows.Forms.PictureBox();
             this.btnSave2 = new System.Windows.Forms.Button();
             this.lblDragonType2 = new System.Windows.Forms.Label();
             this.pnlDragonType2 = new System.Windows.Forms.Panel();
@@ -59,14 +61,12 @@
             this.lblWindDragonStats = new System.Windows.Forms.Label();
             this.lblIceDragonStats = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.picDragon1 = new System.Windows.Forms.PictureBox();
-            this.picDragon2 = new System.Windows.Forms.PictureBox();
             this.pnlPlayer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picDragon1)).BeginInit();
             this.pnlDragonType1.SuspendLayout();
             this.pnlPlayer2.SuspendLayout();
-            this.pnlDragonType2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picDragon1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDragon2)).BeginInit();
+            this.pnlDragonType2.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlPlayer1
@@ -86,6 +86,15 @@
             this.pnlPlayer1.Name = "pnlPlayer1";
             this.pnlPlayer1.Size = new System.Drawing.Size(260, 347);
             this.pnlPlayer1.TabIndex = 1;
+            // 
+            // picDragon1
+            // 
+            this.picDragon1.Location = new System.Drawing.Point(87, 218);
+            this.picDragon1.Name = "picDragon1";
+            this.picDragon1.Size = new System.Drawing.Size(85, 85);
+            this.picDragon1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picDragon1.TabIndex = 7;
+            this.picDragon1.TabStop = false;
             // 
             // btnSave1
             // 
@@ -238,6 +247,15 @@
             this.pnlPlayer2.Size = new System.Drawing.Size(260, 347);
             this.pnlPlayer2.TabIndex = 3;
             // 
+            // picDragon2
+            // 
+            this.picDragon2.Location = new System.Drawing.Point(87, 218);
+            this.picDragon2.Name = "picDragon2";
+            this.picDragon2.Size = new System.Drawing.Size(85, 85);
+            this.picDragon2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picDragon2.TabIndex = 8;
+            this.picDragon2.TabStop = false;
+            // 
             // btnSave2
             // 
             this.btnSave2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -384,7 +402,7 @@
             // lblEarthDragonStats
             // 
             this.lblEarthDragonStats.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEarthDragonStats.ForeColor = System.Drawing.Color.Yellow;
+            this.lblEarthDragonStats.ForeColor = System.Drawing.Color.Violet;
             this.lblEarthDragonStats.Image = global::DavidTristanICETask3.Properties.Resources.Earth_Dragon;
             this.lblEarthDragonStats.Location = new System.Drawing.Point(750, 200);
             this.lblEarthDragonStats.Name = "lblEarthDragonStats";
@@ -396,7 +414,7 @@
             // lblWindDragonStats
             // 
             this.lblWindDragonStats.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWindDragonStats.ForeColor = System.Drawing.Color.Yellow;
+            this.lblWindDragonStats.ForeColor = System.Drawing.Color.Violet;
             this.lblWindDragonStats.Image = global::DavidTristanICETask3.Properties.Resources.Wind_Dragon;
             this.lblWindDragonStats.Location = new System.Drawing.Point(550, 200);
             this.lblWindDragonStats.Name = "lblWindDragonStats";
@@ -408,7 +426,7 @@
             // lblIceDragonStats
             // 
             this.lblIceDragonStats.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIceDragonStats.ForeColor = System.Drawing.Color.Yellow;
+            this.lblIceDragonStats.ForeColor = System.Drawing.Color.Violet;
             this.lblIceDragonStats.Image = global::DavidTristanICETask3.Properties.Resources.Ice_Dragon;
             this.lblIceDragonStats.Location = new System.Drawing.Point(750, 0);
             this.lblIceDragonStats.Name = "lblIceDragonStats";
@@ -420,7 +438,7 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Yellow;
+            this.label2.ForeColor = System.Drawing.Color.Violet;
             this.label2.Image = global::DavidTristanICETask3.Properties.Resources.Fire_Dragon;
             this.label2.Location = new System.Drawing.Point(550, 0);
             this.label2.Name = "label2";
@@ -428,24 +446,6 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "Fire Dragon\r\n\r\n20 HP\r\n\r\n5 Attack Damage\r\n\r\n12 Special Attack Damage\r\n\r\n4 Block Da" +
     "mage";
-            // 
-            // picDragon1
-            // 
-            this.picDragon1.Location = new System.Drawing.Point(87, 218);
-            this.picDragon1.Name = "picDragon1";
-            this.picDragon1.Size = new System.Drawing.Size(85, 85);
-            this.picDragon1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picDragon1.TabIndex = 7;
-            this.picDragon1.TabStop = false;
-            // 
-            // picDragon2
-            // 
-            this.picDragon2.Location = new System.Drawing.Point(87, 218);
-            this.picDragon2.Name = "picDragon2";
-            this.picDragon2.Size = new System.Drawing.Size(85, 85);
-            this.picDragon2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picDragon2.TabIndex = 8;
-            this.picDragon2.TabStop = false;
             // 
             // StartGameForm
             // 
@@ -466,14 +466,14 @@
             this.Text = "Dragon Battle!";
             this.pnlPlayer1.ResumeLayout(false);
             this.pnlPlayer1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picDragon1)).EndInit();
             this.pnlDragonType1.ResumeLayout(false);
             this.pnlDragonType1.PerformLayout();
             this.pnlPlayer2.ResumeLayout(false);
             this.pnlPlayer2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picDragon2)).EndInit();
             this.pnlDragonType2.ResumeLayout(false);
             this.pnlDragonType2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picDragon1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picDragon2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
