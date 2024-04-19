@@ -38,12 +38,12 @@ namespace DavidTristanICETask3
             Application.Exit();
         }
 
-        public System.Windows.Forms.PictureBox GetPicPlayer1Dragon()
+        public PictureBox GetPicPlayer1Dragon()
         {
             return picPlayer1Dragon;
         }
 
-        public System.Windows.Forms.PictureBox GetPicPlayer2Dragon()
+        public PictureBox GetPicPlayer2Dragon()
         {
             return picPlayer2Dragon;
         }
