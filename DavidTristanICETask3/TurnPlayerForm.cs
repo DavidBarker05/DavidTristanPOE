@@ -21,7 +21,7 @@ namespace DavidTristanICETask3
             pnlPlayerMove.BackColor = Color.LightGray;
 
             /*
-             * Note: Thi is an in-text citation (for url see the reference list in References.Docx)
+             * Note: This is an in-text citation (for url see the reference list in References.Docx)
              * 
              * Closing the second form wouldn't exit the application, so we needed to force an exit while it was closing, Microsoft ([s.a.]) demonstrates how to access this moment using the Form.FormClosing Event in the API
              */
@@ -29,7 +29,7 @@ namespace DavidTristanICETask3
         }
 
         /* 
-         * Note: Thi is an in-text citation (for url see the reference list in References.Docx)
+         * Note: This is an in-text citation (for url see the reference list in References.Docx)
          * 
          * In order to use Application.Exit() a method that folows FormClosingEventHandler Delegate needs to be made in order to add it to the forms Form.FormClosing Event, Microsoft ([s.a.]) demonstrate how to do this in their API
          */
