@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace DavidTristanPOE
@@ -8,18 +9,7 @@ namespace DavidTristanPOE
         public TurnPlayerForm()
         {
             InitializeComponent();
-            btnAttack.BackColor = Color.Firebrick;
-            btnSpAttack.BackColor = Color.Goldenrod;
-            btnBlock.BackColor = Color.LightSeaGreen;
-            pnlOpponent.BackColor = Color.LightGray;
-            lblOpponent.BackColor = Color.Maroon;
-            lblOpponent.ForeColor = Color.White;
-            pnlBattleLog.BackColor = Color.SteelBlue;
-            pnlBattleLogReport.BackColor = Color.LightSteelBlue;
-            lblBattleLog.BackColor = Color.SteelBlue;
-            lblDragonNameType1.BackColor = Color.LightGray;
-            pnlPlayerMove.BackColor = Color.LightGray;
-
+            btnRest.Visible = false;
             /*
              * Note: This is an in-text citation (for url see the reference list in References.Docx)
              * 
@@ -36,6 +26,26 @@ namespace DavidTristanPOE
         private void TurnPlayerForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnAttack_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSpAttack_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBlock_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRest_Click(object sender, System.EventArgs e)
+        {
+
         }
 
         public PictureBox GetPicPlayer1Dragon()

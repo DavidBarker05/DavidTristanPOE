@@ -73,6 +73,7 @@
             // 
             this.pnlPlayer1.AccessibleDescription = "";
             this.pnlPlayer1.AccessibleName = "";
+            this.pnlPlayer1.BackColor = System.Drawing.Color.LightGray;
             this.pnlPlayer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlPlayer1.Controls.Add(this.picDragon1);
             this.pnlPlayer1.Controls.Add(this.btnSave1);
@@ -222,17 +223,19 @@
             // 
             // btnStartGame
             // 
+            this.btnStartGame.BackColor = System.Drawing.Color.Red;
             this.btnStartGame.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStartGame.Location = new System.Drawing.Point(10, 367);
             this.btnStartGame.Name = "btnStartGame";
             this.btnStartGame.Size = new System.Drawing.Size(530, 23);
             this.btnStartGame.TabIndex = 2;
             this.btnStartGame.Text = "Start Game";
-            this.btnStartGame.UseVisualStyleBackColor = true;
+            this.btnStartGame.UseVisualStyleBackColor = false;
             this.btnStartGame.Click += new System.EventHandler(this.btnStartGame_Click);
             // 
             // pnlPlayer2
             // 
+            this.pnlPlayer2.BackColor = System.Drawing.Color.LightGray;
             this.pnlPlayer2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlPlayer2.Controls.Add(this.picDragon2);
             this.pnlPlayer2.Controls.Add(this.btnSave2);
@@ -382,6 +385,7 @@
             // lblPlayer1
             // 
             this.lblPlayer1.AutoSize = true;
+            this.lblPlayer1.BackColor = System.Drawing.Color.LightGray;
             this.lblPlayer1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlayer1.Location = new System.Drawing.Point(20, 2);
             this.lblPlayer1.Name = "lblPlayer1";
@@ -392,6 +396,7 @@
             // lblPlayer2
             // 
             this.lblPlayer2.AutoSize = true;
+            this.lblPlayer2.BackColor = System.Drawing.Color.LightGray;
             this.lblPlayer2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlayer2.Location = new System.Drawing.Point(290, 2);
             this.lblPlayer2.Name = "lblPlayer2";

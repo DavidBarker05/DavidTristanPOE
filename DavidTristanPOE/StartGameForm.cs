@@ -13,7 +13,6 @@ namespace DavidTristanPOE
         public StartGameForm()
         {
             InitializeComponent();
-            btnStartGame.BackColor = Color.Red;
             rbtnFireDragon1.Select();
             rbtnFireDragon2.Select();
         }
