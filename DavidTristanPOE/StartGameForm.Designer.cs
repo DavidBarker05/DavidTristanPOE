@@ -111,7 +111,7 @@
             // lblDragonType1
             // 
             this.lblDragonType1.AutoSize = true;
-            this.lblDragonType1.BackColor = System.Drawing.SystemColors.Control;
+            this.lblDragonType1.BackColor = System.Drawing.Color.LightGray;
             this.lblDragonType1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDragonType1.Location = new System.Drawing.Point(20, 79);
             this.lblDragonType1.Name = "lblDragonType1";
