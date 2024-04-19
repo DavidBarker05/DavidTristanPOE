@@ -37,15 +37,5 @@ namespace DavidTristanICETask3
         {
             Application.Exit();
         }
-
-        public PictureBox GetPicPlayer1Dragon()
-        {
-            return picPlayer1Dragon;
-        }
-
-        public PictureBox GetPicPlayer2Dragon()
-        {
-            return picPlayer2Dragon;
-        }
     }
 }

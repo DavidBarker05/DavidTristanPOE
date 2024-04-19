@@ -262,5 +262,15 @@
         private System.Windows.Forms.PictureBox picPlayer1Dragon;
         private System.Windows.Forms.Label lblVs;
         private System.Windows.Forms.PictureBox picPlayer2Dragon;
+
+        public System.Windows.Forms.PictureBox GetPicPlayer1Dragon()
+        {
+            return picPlayer1Dragon;
+        }
+
+        public System.Windows.Forms.PictureBox GetPicPlayer2Dragon()
+        {
+            return picPlayer2Dragon;
+        }
     }
 }
