@@ -1,4 +1,4 @@
-﻿namespace DavidTristanICETask3
+﻿namespace DavidTristanPOE
 {
     partial class StartGameForm
     {
@@ -403,7 +403,7 @@
             // 
             this.lblEarthDragonStats.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEarthDragonStats.ForeColor = System.Drawing.Color.Violet;
-            this.lblEarthDragonStats.Image = global::DavidTristanICETask3.Properties.Resources.Earth_Dragon;
+            this.lblEarthDragonStats.Image = global::DavidTristanPOE.Properties.Resources.Earth_Dragon;
             this.lblEarthDragonStats.Location = new System.Drawing.Point(750, 200);
             this.lblEarthDragonStats.Name = "lblEarthDragonStats";
             this.lblEarthDragonStats.Size = new System.Drawing.Size(200, 200);
@@ -415,7 +415,7 @@
             // 
             this.lblWindDragonStats.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWindDragonStats.ForeColor = System.Drawing.Color.Violet;
-            this.lblWindDragonStats.Image = global::DavidTristanICETask3.Properties.Resources.Wind_Dragon;
+            this.lblWindDragonStats.Image = global::DavidTristanPOE.Properties.Resources.Wind_Dragon;
             this.lblWindDragonStats.Location = new System.Drawing.Point(550, 200);
             this.lblWindDragonStats.Name = "lblWindDragonStats";
             this.lblWindDragonStats.Size = new System.Drawing.Size(200, 200);
@@ -427,7 +427,7 @@
             // 
             this.lblIceDragonStats.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIceDragonStats.ForeColor = System.Drawing.Color.Violet;
-            this.lblIceDragonStats.Image = global::DavidTristanICETask3.Properties.Resources.Ice_Dragon;
+            this.lblIceDragonStats.Image = global::DavidTristanPOE.Properties.Resources.Ice_Dragon;
             this.lblIceDragonStats.Location = new System.Drawing.Point(750, 0);
             this.lblIceDragonStats.Name = "lblIceDragonStats";
             this.lblIceDragonStats.Size = new System.Drawing.Size(200, 200);
@@ -439,7 +439,7 @@
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Violet;
-            this.label2.Image = global::DavidTristanICETask3.Properties.Resources.Fire_Dragon;
+            this.label2.Image = global::DavidTristanPOE.Properties.Resources.Fire_Dragon;
             this.label2.Location = new System.Drawing.Point(550, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(200, 200);

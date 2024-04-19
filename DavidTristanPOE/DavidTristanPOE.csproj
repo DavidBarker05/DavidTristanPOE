@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{277195C9-B6C8-4AEF-8717-1E9C5DAFAC00}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>DavidTristanICETask3</RootNamespace>
+    <RootNamespace>DavidTristanPOE</RootNamespace>
     <AssemblyName>DavidTristanICETask3</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

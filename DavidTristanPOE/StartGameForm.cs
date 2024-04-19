@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace DavidTristanICETask3
+namespace DavidTristanPOE
 {
     public partial class StartGameForm : Form
     {

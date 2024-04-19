@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace DavidTristanICETask3
+namespace DavidTristanPOE
 {
     internal static class Program
     {

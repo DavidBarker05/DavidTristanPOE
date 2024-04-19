@@ -1,4 +1,4 @@
-﻿namespace DavidTristanICETask3
+﻿namespace DavidTristanPOE
 {
     partial class TurnPlayerForm
     {
