@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace DavidTristanPOE
 {
@@ -51,6 +52,11 @@ namespace DavidTristanPOE
         private void BtnRest_Click(object sender, System.EventArgs e)
         {
 
+        }
+
+        public void SaveValues(string[] p1Data, string[] p2Data, int[] p1Values, int[] p2Values)
+        {
+            // To-do: Save values (If you need help check pseudocode)
         }
     }
 }
