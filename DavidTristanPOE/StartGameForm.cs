@@ -142,14 +142,14 @@ namespace DavidTristanPOE
             if (Player1Saved && Player2Saved)
             {
                 TurnPlayer = new TurnPlayerForm();
-                if (rbtnFireDragon1.Checked) TurnPlayer.GetPicPlayer1Dragon().Image = Properties.Resources.Fire_Dragon;
-                else if (rbtnIceDragon1.Checked) TurnPlayer.GetPicPlayer1Dragon().Image = Properties.Resources.Ice_Dragon;
-                else if (rbtnWindDragon1.Checked) TurnPlayer.GetPicPlayer1Dragon().Image = Properties.Resources.Wind_Dragon;
-                else if (rbtnEarthDragon1.Checked) TurnPlayer.GetPicPlayer1Dragon().Image = Properties.Resources.Earth_Dragon;
-                if (rbtnFireDragon2.Checked) TurnPlayer.GetPicPlayer2Dragon().Image = Properties.Resources.Fire_Dragon;
-                else if (rbtnIceDragon2.Checked) TurnPlayer.GetPicPlayer2Dragon().Image = Properties.Resources.Ice_Dragon;
-                else if (rbtnWindDragon2.Checked) TurnPlayer.GetPicPlayer2Dragon().Image = Properties.Resources.Wind_Dragon;
-                else if (rbtnEarthDragon2.Checked) TurnPlayer.GetPicPlayer2Dragon().Image = Properties.Resources.Earth_Dragon;
+                if (rbtnFireDragon1.Checked) TurnPlayer.PicPlayer1Dragon.Image = Properties.Resources.Fire_Dragon;
+                else if (rbtnIceDragon1.Checked) TurnPlayer.PicPlayer1Dragon.Image = Properties.Resources.Ice_Dragon;
+                else if (rbtnWindDragon1.Checked) TurnPlayer.PicPlayer1Dragon.Image = Properties.Resources.Wind_Dragon;
+                else if (rbtnEarthDragon1.Checked) TurnPlayer.PicPlayer1Dragon.Image = Properties.Resources.Earth_Dragon;
+                if (rbtnFireDragon2.Checked) TurnPlayer.PicPlayer2Dragon.Image = Properties.Resources.Fire_Dragon;
+                else if (rbtnIceDragon2.Checked) TurnPlayer.PicPlayer2Dragon.Image = Properties.Resources.Ice_Dragon;
+                else if (rbtnWindDragon2.Checked) TurnPlayer.PicPlayer2Dragon.Image = Properties.Resources.Wind_Dragon;
+                else if (rbtnEarthDragon2.Checked) TurnPlayer.PicPlayer2Dragon.Image = Properties.Resources.Earth_Dragon;
                 TurnPlayer.Show();
                 this.Hide();
             }

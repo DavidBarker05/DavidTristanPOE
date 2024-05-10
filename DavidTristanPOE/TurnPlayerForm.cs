@@ -7,6 +7,10 @@ namespace DavidTristanPOE
     public partial class TurnPlayerForm : Form
     {
 
+        public PictureBox PicPlayer1Dragon { get { return picPlayer1Dragon; } }
+
+        public PictureBox PicPlayer2Dragon { get { return picPlayer2Dragon; } }
+
         public TurnPlayerForm()
         {
             InitializeComponent();
@@ -51,16 +55,6 @@ namespace DavidTristanPOE
         private void btnRest_Click(object sender, System.EventArgs e)
         {
 
-        }
-
-        public PictureBox GetPicPlayer1Dragon()
-        {
-            return picPlayer1Dragon;
-        }
-
-        public PictureBox GetPicPlayer2Dragon()
-        {
-            return picPlayer2Dragon;
         }
     }
 }
