@@ -20,10 +20,7 @@ namespace DavidTristanPOE
         private void btnSave1_Click(object sender, EventArgs e)
         {
             player1Saved = true;
-            if (player2Saved)
-            {
-                btnStartGame.BackColor = Color.White;
-            }
+            if (player2Saved) btnStartGame.BackColor = Color.White;
             pnlPlayer1.BackColor = Color.Green;
             lblPlayer1.BackColor = Color.Green;
             btnSave1.BackColor = Color.Lime;
@@ -32,10 +29,7 @@ namespace DavidTristanPOE
         private void btnSave2_Click(object sender, EventArgs e)
         {
             player2Saved = true;
-            if (player1Saved)
-            {
-                btnStartGame.BackColor = Color.White;
-            }
+            if (player1Saved) btnStartGame.BackColor = Color.White;
             pnlPlayer2.BackColor = Color.Green;
             lblPlayer2.BackColor = Color.Green;
             btnSave2.BackColor = Color.Lime;
