@@ -30,7 +30,7 @@ namespace DavidTristanPOE
              * explains how to use a lambda expression, which is what I used (see What are Delegates? (C#
              * Basics, Lambda, Action, Func), 2020).
              */
-            this.FormClosing += (object sender, FormClosingEventArgs e) => { Application.Exit(); };
+            FormClosing += (object sender, FormClosingEventArgs e) => Application.Exit();
         }
 
         private void BtnAttack_Click(object sender, EventArgs e)
