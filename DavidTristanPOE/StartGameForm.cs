@@ -7,8 +7,8 @@ namespace DavidTristanPOE
     public partial class StartGameForm : Form
     {
 
-        private bool Player1Saved = false, Player2Saved = false;
-        private TurnPlayerForm TurnPlayer;
+        private bool player1Saved = false, player2Saved = false;
+        private TurnPlayerForm turnPlayerForm;
 
         public StartGameForm()
         {
@@ -19,8 +19,8 @@ namespace DavidTristanPOE
 
         private void btnSave1_Click(object sender, EventArgs e)
         {
-            Player1Saved = true;
-            if (Player2Saved)
+            player1Saved = true;
+            if (player2Saved)
             {
                 btnStartGame.BackColor = Color.White;
             }
@@ -31,8 +31,8 @@ namespace DavidTristanPOE
 
         private void btnSave2_Click(object sender, EventArgs e)
         {
-            Player2Saved = true;
-            if (Player1Saved)
+            player2Saved = true;
+            if (player1Saved)
             {
                 btnStartGame.BackColor = Color.White;
             }
@@ -139,18 +139,18 @@ namespace DavidTristanPOE
 
         private void btnStartGame_Click(object sender, EventArgs e)
         {
-            if (Player1Saved && Player2Saved)
+            if (player1Saved && player2Saved)
             {
-                TurnPlayer = new TurnPlayerForm();
-                if (rbtnFireDragon1.Checked) TurnPlayer.PicPlayer1Dragon.Image = Properties.Resources.Fire_Dragon;
-                else if (rbtnIceDragon1.Checked) TurnPlayer.PicPlayer1Dragon.Image = Properties.Resources.Ice_Dragon;
-                else if (rbtnWindDragon1.Checked) TurnPlayer.PicPlayer1Dragon.Image = Properties.Resources.Wind_Dragon;
-                else if (rbtnEarthDragon1.Checked) TurnPlayer.PicPlayer1Dragon.Image = Properties.Resources.Earth_Dragon;
-                if (rbtnFireDragon2.Checked) TurnPlayer.PicPlayer2Dragon.Image = Properties.Resources.Fire_Dragon;
-                else if (rbtnIceDragon2.Checked) TurnPlayer.PicPlayer2Dragon.Image = Properties.Resources.Ice_Dragon;
-                else if (rbtnWindDragon2.Checked) TurnPlayer.PicPlayer2Dragon.Image = Properties.Resources.Wind_Dragon;
-                else if (rbtnEarthDragon2.Checked) TurnPlayer.PicPlayer2Dragon.Image = Properties.Resources.Earth_Dragon;
-                TurnPlayer.Show();
+                turnPlayerForm = new TurnPlayerForm();
+                if (rbtnFireDragon1.Checked) turnPlayerForm.PicPlayer1Dragon.Image = Properties.Resources.Fire_Dragon;
+                else if (rbtnIceDragon1.Checked) turnPlayerForm.PicPlayer1Dragon.Image = Properties.Resources.Ice_Dragon;
+                else if (rbtnWindDragon1.Checked) turnPlayerForm.PicPlayer1Dragon.Image = Properties.Resources.Wind_Dragon;
+                else if (rbtnEarthDragon1.Checked) turnPlayerForm.PicPlayer1Dragon.Image = Properties.Resources.Earth_Dragon;
+                if (rbtnFireDragon2.Checked) turnPlayerForm.PicPlayer2Dragon.Image = Properties.Resources.Fire_Dragon;
+                else if (rbtnIceDragon2.Checked) turnPlayerForm.PicPlayer2Dragon.Image = Properties.Resources.Ice_Dragon;
+                else if (rbtnWindDragon2.Checked) turnPlayerForm.PicPlayer2Dragon.Image = Properties.Resources.Wind_Dragon;
+                else if (rbtnEarthDragon2.Checked) turnPlayerForm.PicPlayer2Dragon.Image = Properties.Resources.Earth_Dragon;
+                turnPlayerForm.Show();
                 this.Hide();
             }
         }
