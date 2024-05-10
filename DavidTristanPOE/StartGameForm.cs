@@ -17,7 +17,7 @@ namespace DavidTristanPOE
             rbtnFireDragon2.Select();
         }
 
-        private void btnSave1_Click(object sender, EventArgs e)
+        private void BtnSave1_Click(object sender, EventArgs e)
         {
             player1Saved = true;
             if (player2Saved) btnStartGame.BackColor = Color.White;
@@ -26,7 +26,7 @@ namespace DavidTristanPOE
             btnSave1.BackColor = Color.Lime;
         }
 
-        private void btnSave2_Click(object sender, EventArgs e)
+        private void BtnSave2_Click(object sender, EventArgs e)
         {
             player2Saved = true;
             if (player1Saved) btnStartGame.BackColor = Color.White;
@@ -35,7 +35,7 @@ namespace DavidTristanPOE
             btnSave2.BackColor = Color.Lime;
         }
 
-        private void rbtnFireDragon1_CheckedChanged(object sender, EventArgs e)
+        private void RbtnFireDragon1_CheckedChanged(object sender, EventArgs e)
         {
             pnlDragonType1.BackColor = Color.Red;
             lblDragonType1.BackColor = Color.Red;
@@ -47,7 +47,7 @@ namespace DavidTristanPOE
             picDragon1.Image = Properties.Resources.Fire_Dragon;
         }
 
-        private void rbtnIceDragon1_CheckedChanged(object sender, EventArgs e)
+        private void RbtnIceDragon1_CheckedChanged(object sender, EventArgs e)
         {
             pnlDragonType1.BackColor = Color.Cyan;
             lblDragonType1.BackColor = Color.Cyan;
@@ -59,7 +59,7 @@ namespace DavidTristanPOE
             picDragon1.Image = Properties.Resources.Ice_Dragon;
         }
 
-        private void rbtnWindDragon1_CheckedChanged(object sender, EventArgs e)
+        private void RbtnWindDragon1_CheckedChanged(object sender, EventArgs e)
         {
             pnlDragonType1.BackColor = Color.Silver;
             lblDragonType1.BackColor = Color.Silver;
@@ -71,7 +71,7 @@ namespace DavidTristanPOE
             picDragon1.Image = Properties.Resources.Wind_Dragon;
         }
 
-        private void rbtnEarthDragon1_CheckedChanged(object sender, EventArgs e)
+        private void RbtnEarthDragon1_CheckedChanged(object sender, EventArgs e)
         {
             pnlDragonType1.BackColor = Color.SaddleBrown;
             lblDragonType1.BackColor = Color.SaddleBrown;
@@ -83,7 +83,7 @@ namespace DavidTristanPOE
             picDragon1.Image = Properties.Resources.Earth_Dragon;
         }
 
-        private void rbtnFireDragon2_CheckedChanged(object sender, EventArgs e)
+        private void RbtnFireDragon2_CheckedChanged(object sender, EventArgs e)
         {
             pnlDragonType2.BackColor = Color.Red;
             lblDragonType2.BackColor = Color.Red;
@@ -95,7 +95,7 @@ namespace DavidTristanPOE
             picDragon2.Image = Properties.Resources.Fire_Dragon;
         }
 
-        private void rbtnIceDragon2_CheckedChanged(object sender, EventArgs e)
+        private void RbtnIceDragon2_CheckedChanged(object sender, EventArgs e)
         {
             pnlDragonType2.BackColor = Color.Cyan;
             lblDragonType2.BackColor = Color.Cyan;
@@ -107,7 +107,7 @@ namespace DavidTristanPOE
             picDragon2.Image = Properties.Resources.Ice_Dragon;
         }
 
-        private void rbtnWindDragon2_CheckedChanged(object sender, EventArgs e)
+        private void RbtnWindDragon2_CheckedChanged(object sender, EventArgs e)
         {
             pnlDragonType2.BackColor = Color.Silver;
             lblDragonType2.BackColor = Color.Silver;
@@ -119,7 +119,7 @@ namespace DavidTristanPOE
             picDragon2.Image = Properties.Resources.Wind_Dragon;
         }
 
-        private void rbtnEarthDragon2_CheckedChanged(object sender, EventArgs e)
+        private void RbtnEarthDragon2_CheckedChanged(object sender, EventArgs e)
         {
             pnlDragonType2.BackColor = Color.SaddleBrown;
             lblDragonType2.BackColor = Color.SaddleBrown;
@@ -131,7 +131,7 @@ namespace DavidTristanPOE
             picDragon2.Image = Properties.Resources.Earth_Dragon;
         }
 
-        private void btnStartGame_Click(object sender, EventArgs e)
+        private void BtnStartGame_Click(object sender, EventArgs e)
         {
             if (player1Saved && player2Saved)
             {

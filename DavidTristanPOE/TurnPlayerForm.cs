@@ -33,22 +33,22 @@ namespace DavidTristanPOE
             this.FormClosing += (object sender, FormClosingEventArgs e) => { Application.Exit(); };
         }
 
-        private void btnAttack_Click(object sender, EventArgs e)
+        private void BtnAttack_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btnSpAttack_Click(object sender, EventArgs e)
+        private void BtnSpAttack_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btnBlock_Click(object sender, EventArgs e)
+        private void BtnBlock_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btnRest_Click(object sender, System.EventArgs e)
+        private void BtnRest_Click(object sender, System.EventArgs e)
         {
 
         }

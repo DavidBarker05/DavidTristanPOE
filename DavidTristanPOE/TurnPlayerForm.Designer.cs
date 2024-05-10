@@ -90,7 +90,7 @@
             this.btnBlock.TabIndex = 4;
             this.btnBlock.Text = "Block";
             this.btnBlock.UseVisualStyleBackColor = false;
-            this.btnBlock.Click += new System.EventHandler(this.btnBlock_Click);
+            this.btnBlock.Click += new System.EventHandler(this.BtnBlock_Click);
             // 
             // btnSpAttack
             // 
@@ -102,7 +102,7 @@
             this.btnSpAttack.TabIndex = 3;
             this.btnSpAttack.Text = "Special Attack";
             this.btnSpAttack.UseVisualStyleBackColor = false;
-            this.btnSpAttack.Click += new System.EventHandler(this.btnSpAttack_Click);
+            this.btnSpAttack.Click += new System.EventHandler(this.BtnSpAttack_Click);
             // 
             // lblHp1
             // 
@@ -124,7 +124,7 @@
             this.btnAttack.TabIndex = 0;
             this.btnAttack.Text = "Attack";
             this.btnAttack.UseVisualStyleBackColor = false;
-            this.btnAttack.Click += new System.EventHandler(this.btnAttack_Click);
+            this.btnAttack.Click += new System.EventHandler(this.BtnAttack_Click);
             // 
             // pnlOpponent
             // 
@@ -252,7 +252,7 @@
             this.btnRest.TabIndex = 5;
             this.btnRest.Text = "Rest";
             this.btnRest.UseVisualStyleBackColor = false;
-            this.btnRest.Click += new System.EventHandler(this.btnRest_Click);
+            this.btnRest.Click += new System.EventHandler(this.BtnRest_Click);
             // 
             // TurnPlayerForm
             // 

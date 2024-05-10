@@ -106,7 +106,7 @@
             this.btnSave1.TabIndex = 6;
             this.btnSave1.Text = "Save";
             this.btnSave1.UseVisualStyleBackColor = true;
-            this.btnSave1.Click += new System.EventHandler(this.btnSave1_Click);
+            this.btnSave1.Click += new System.EventHandler(this.BtnSave1_Click);
             // 
             // lblDragonType1
             // 
@@ -142,7 +142,7 @@
             this.rbtnEarthDragon1.TabStop = true;
             this.rbtnEarthDragon1.Text = "Earth Dragon";
             this.rbtnEarthDragon1.UseVisualStyleBackColor = true;
-            this.rbtnEarthDragon1.CheckedChanged += new System.EventHandler(this.rbtnEarthDragon1_CheckedChanged);
+            this.rbtnEarthDragon1.CheckedChanged += new System.EventHandler(this.RbtnEarthDragon1_CheckedChanged);
             // 
             // rbtnWindDragon1
             // 
@@ -155,7 +155,7 @@
             this.rbtnWindDragon1.TabStop = true;
             this.rbtnWindDragon1.Text = "Wind Dragon";
             this.rbtnWindDragon1.UseVisualStyleBackColor = true;
-            this.rbtnWindDragon1.CheckedChanged += new System.EventHandler(this.rbtnWindDragon1_CheckedChanged);
+            this.rbtnWindDragon1.CheckedChanged += new System.EventHandler(this.RbtnWindDragon1_CheckedChanged);
             // 
             // rbtnIceDragon1
             // 
@@ -168,7 +168,7 @@
             this.rbtnIceDragon1.TabStop = true;
             this.rbtnIceDragon1.Text = "Ice Dragon";
             this.rbtnIceDragon1.UseVisualStyleBackColor = true;
-            this.rbtnIceDragon1.CheckedChanged += new System.EventHandler(this.rbtnIceDragon1_CheckedChanged);
+            this.rbtnIceDragon1.CheckedChanged += new System.EventHandler(this.RbtnIceDragon1_CheckedChanged);
             // 
             // rbtnFireDragon1
             // 
@@ -181,7 +181,7 @@
             this.rbtnFireDragon1.TabStop = true;
             this.rbtnFireDragon1.Text = "Fire Dragon";
             this.rbtnFireDragon1.UseVisualStyleBackColor = true;
-            this.rbtnFireDragon1.CheckedChanged += new System.EventHandler(this.rbtnFireDragon1_CheckedChanged);
+            this.rbtnFireDragon1.CheckedChanged += new System.EventHandler(this.RbtnFireDragon1_CheckedChanged);
             // 
             // txtDragonName1
             // 
@@ -231,7 +231,7 @@
             this.btnStartGame.TabIndex = 2;
             this.btnStartGame.Text = "Start Game";
             this.btnStartGame.UseVisualStyleBackColor = false;
-            this.btnStartGame.Click += new System.EventHandler(this.btnStartGame_Click);
+            this.btnStartGame.Click += new System.EventHandler(this.BtnStartGame_Click);
             // 
             // pnlPlayer2
             // 
@@ -268,7 +268,7 @@
             this.btnSave2.TabIndex = 7;
             this.btnSave2.Text = "Save";
             this.btnSave2.UseVisualStyleBackColor = true;
-            this.btnSave2.Click += new System.EventHandler(this.btnSave2_Click);
+            this.btnSave2.Click += new System.EventHandler(this.BtnSave2_Click);
             // 
             // lblDragonType2
             // 
@@ -303,7 +303,7 @@
             this.rbtnEarthDragon2.TabStop = true;
             this.rbtnEarthDragon2.Text = "Earth Dragon";
             this.rbtnEarthDragon2.UseVisualStyleBackColor = true;
-            this.rbtnEarthDragon2.CheckedChanged += new System.EventHandler(this.rbtnEarthDragon2_CheckedChanged);
+            this.rbtnEarthDragon2.CheckedChanged += new System.EventHandler(this.RbtnEarthDragon2_CheckedChanged);
             // 
             // rbtnWindDragon2
             // 
@@ -316,7 +316,7 @@
             this.rbtnWindDragon2.TabStop = true;
             this.rbtnWindDragon2.Text = "Wind Dragon";
             this.rbtnWindDragon2.UseVisualStyleBackColor = true;
-            this.rbtnWindDragon2.CheckedChanged += new System.EventHandler(this.rbtnWindDragon2_CheckedChanged);
+            this.rbtnWindDragon2.CheckedChanged += new System.EventHandler(this.RbtnWindDragon2_CheckedChanged);
             // 
             // rbtnIceDragon2
             // 
@@ -329,7 +329,7 @@
             this.rbtnIceDragon2.TabStop = true;
             this.rbtnIceDragon2.Text = "Ice Dragon";
             this.rbtnIceDragon2.UseVisualStyleBackColor = true;
-            this.rbtnIceDragon2.CheckedChanged += new System.EventHandler(this.rbtnIceDragon2_CheckedChanged);
+            this.rbtnIceDragon2.CheckedChanged += new System.EventHandler(this.RbtnIceDragon2_CheckedChanged);
             // 
             // rbtnFireDragon2
             // 
@@ -342,7 +342,7 @@
             this.rbtnFireDragon2.TabStop = true;
             this.rbtnFireDragon2.Text = "Fire Dragon";
             this.rbtnFireDragon2.UseVisualStyleBackColor = true;
-            this.rbtnFireDragon2.CheckedChanged += new System.EventHandler(this.rbtnFireDragon2_CheckedChanged);
+            this.rbtnFireDragon2.CheckedChanged += new System.EventHandler(this.RbtnFireDragon2_CheckedChanged);
             // 
             // txtDragonName2
             // 
