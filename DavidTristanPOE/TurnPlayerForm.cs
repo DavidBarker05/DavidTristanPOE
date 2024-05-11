@@ -7,8 +7,8 @@ namespace DavidTristanPOE
     public partial class TurnPlayerForm : Form
     {
 
-        private string[] p1Data, p2Data;
-        private int[] p1Values, p2Values;
+        private string[] p1Data, p2Data; //Array for storing player details(data)
+        private int[] p1Values, p2Values; //Aray for storing the dragon's statistics
 
         public PictureBox PicPlayer1Dragon { get { return picPlayer1Dragon; } }
 
@@ -44,9 +44,13 @@ namespace DavidTristanPOE
 
         private void BtnAttack_Click(object sender, EventArgs e)
         {
+            // Declerations for "Attack" button
             int hp, atk, block, damage;
             string attacker, defender, blockMessage;
             string battleText = lblBattle.Text;
+            /* If statements are used to determine how much damage will be dealt from the player to the opponent whether
+             * the opponent chooses to block that will deduct damage or whether the opponent is free to attack.
+            */
             if (playerTurn == 1) 
             {
                 hp = p2Values[0];
@@ -56,7 +60,7 @@ namespace DavidTristanPOE
                 if (p2IsBlocking) 
                 {
                     block = p2Values[3];
-                    damage = atk - block;
+                    damage = atk - block; // Damage gets reduced for when opponent blocks
                     if (damage < 0)
                     {
                         damage = 0;
@@ -85,7 +89,7 @@ namespace DavidTristanPOE
                 if (p1IsBlocking)
                 {
                     block = p1Values[3];
-                    damage = atk - block;
+                    damage = atk - block; // Damage gets reduced for when opponent blocks
 
                     if (damage < 0)
                     {
@@ -106,6 +110,7 @@ namespace DavidTristanPOE
                 p1Values[0] = hp;
                 p2HasPlayed = true;
             }
+            // This will display the text in the battle log for when the player chooses to "Attack"
             battleText += $"{attacker} attacks {defender}! {defender} {blockMessage} takes {damage} damage. {defender} is now on {hp} HP\n";
             battleText += $"--------------------------------------------------------------------------\n";
             lblBattle.Text = battleText;
@@ -114,8 +119,12 @@ namespace DavidTristanPOE
 
         private void BtnSpAttack_Click(object sender, EventArgs e)
         {
+            // Declerations for "Special Attack" button
             int hp, spatk, block, damage;
             string attacker, defender, blockMessage, battleText = lblBattle.Text;
+            /* If statements that determine how much damage will be dealt when the player chooses 
+             * to do a special attack whether the opponent is blocking or not
+             */ 
             if (playerTurn == 1)
             {
                 hp = p2Values[0];
@@ -125,7 +134,7 @@ namespace DavidTristanPOE
                 if (p2IsBlocking)
                 {
                     block = p2Values[3];
-                    damage = spatk - block;
+                    damage = spatk - block; // Damage gets reduced for when opponent blocks
 
                     if ( damage < 0)
                     {
@@ -177,6 +186,7 @@ namespace DavidTristanPOE
                 p2IsResting = true;
                 p2HasPlayed = true;
             }
+            // This will display the text in the battle log for when the player chooses to "Special Attack"
             battleText += $"{attacker} special attacks {defender}! {defender} {blockMessage} takes {damage} damage. {defender} is now on {hp} HP\n";
             battleText += $"--------------------------------------------------------------------------\n";
             lblBattle.Text = battleText;
@@ -185,7 +195,9 @@ namespace DavidTristanPOE
 
         private void BtnBlock_Click(object sender, EventArgs e)
         {
+            // Declerations for the "block" button
             string currentDragon, nextDragon, battleText = lblBattle.Text;
+            // If statements determine whether the player is blocking the next player's/opponent's move or not
             if (playerTurn == 1)
             {
                 currentDragon = p1Data[1];
@@ -200,6 +212,7 @@ namespace DavidTristanPOE
                 p2IsBlocking = true;
                 p2HasPlayed = true;
             }
+            // This will display the text in the battle log for when the player chooses to "block"
             battleText += $"{currentDragon} prepares to block {nextDragon}'s next attack\n";
             battleText += $"--------------------------------------------------------------------------\n";
             lblBattle.Text = battleText;
@@ -208,7 +221,7 @@ namespace DavidTristanPOE
 
         private void BtnRest_Click(object sender, EventArgs e)
         {
-            Rest(playerTurn);
+            Rest(playerTurn); // Rest button is displayed once the player has played to prevent chain attacking
         }
 
         private int TakeInitiative()
@@ -293,13 +306,14 @@ namespace DavidTristanPOE
                 p2IsResting = false;
                 p2HasPlayed = true;
             }
+            // Battle log text for when the player has played their turn and has to rest
             battleText += $"{dragon} is too tired to fight, and rests a while\n";
             battleText += $"--------------------------------------------------------------------------\n";
             lblBattle.Text = battleText;
-            btnAttack.Visible = true;
-            btnSpAttack.Visible = true;
-            btnBlock.Visible = true;
-            btnRest.Visible = false;
+            btnAttack.Visible = true; // Enable attack button when its the next player's turn
+            btnSpAttack.Visible = true; // Enable special attack button when its the next player's turn
+            btnBlock.Visible = true; // Enable block button when its the next player's turn
+            btnRest.Visible = false; // Disable rest button when it's the player's turn again
             SwitchPlayer();
         }
     }
