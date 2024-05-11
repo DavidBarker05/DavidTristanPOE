@@ -137,6 +137,9 @@ namespace DavidTristanPOE
             {
                 p1HasPlayed = false;
                 p2HasPlayed = false;
+                playerTurn = TakeInitiative(); // Reake initiative
+                SwitchPlayer(); // This will invert playerTurn which is why the result of TakeInitiative() is the player with the smallest roll
+                return; // Early return since the battle log has already been updated through the previous switchPlayer() call and we don't want it to update again
             }
             playerTurn = 3 - playerTurn; // Invert the value
             string battleText = lblBattle.Text; // Get the text currently stored in the battle log so that we can add text
