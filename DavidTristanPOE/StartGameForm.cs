@@ -45,7 +45,15 @@ namespace DavidTristanPOE
             { FIRE_DRAG_NAME, Properties.Resources.Fire_Dragon },
             { ICE_DRAG_NAME, Properties.Resources.Ice_Dragon },
             { WIND_DRAG_NAME, Properties.Resources.Wind_Dragon },
-            { EARTH_DRAG_NAME, Properties.Resources.Earth_Dragon },
+            { EARTH_DRAG_NAME, Properties.Resources.Earth_Dragon }
+        };
+
+        private readonly Dictionary<string, int[]> values = new Dictionary<string, int[]>()
+        {
+            { FIRE_DRAG_NAME, new int[4] { FIRE_DRAG_HP, FIRE_DRAG_ATK, FIRE_DRAG_SPATK, FIRE_DRAG_BLOCK } },
+            { ICE_DRAG_NAME, new int[4] { ICE_DRAG_HP, ICE_DRAG_ATK, ICE_DRAG_SPATK, ICE_DRAG_BLOCK } },
+            { WIND_DRAG_NAME, new int[4] { WIND_DRAG_HP, WIND_DRAG_ATK, WIND_DRAG_SPATK, WIND_DRAG_BLOCK } },
+            { EARTH_DRAG_NAME, new int[4] { EARTH_DRAG_HP, EARTH_DRAG_ATK, EARTH_DRAG_SPATK, EARTH_DRAG_BLOCK } }
         };
 
         public StartGameForm()
@@ -57,95 +65,26 @@ namespace DavidTristanPOE
 
         private void BtnSave1_Click(object sender, EventArgs e)
         {
-            const int PLAYER_NUMBER = 1;
-            string playerName = txtPlayerName1.Text, dragonName = txtDragonName1.Text, type = "";
-            int hp = 0, atk = 0, spatk = 0, block = 0;
-            if (!String.IsNullOrWhiteSpace(playerName) && !String.IsNullOrWhiteSpace(dragonName))
-            {
-                if (rbtnFireDragon1.Checked)
-                {
-                    type = FIRE_DRAG_NAME;
-                    hp = FIRE_DRAG_HP;
-                    atk = FIRE_DRAG_ATK;
-                    spatk = FIRE_DRAG_SPATK;
-                    block = FIRE_DRAG_BLOCK;
-                }
-                else if (rbtnIceDragon1.Checked)
-                {
-                    type = ICE_DRAG_NAME;
-                    hp = ICE_DRAG_HP;
-                    atk = ICE_DRAG_ATK;
-                    spatk = ICE_DRAG_SPATK;
-                    block = ICE_DRAG_BLOCK;
-                }
-                else if (rbtnWindDragon1.Checked)
-                {
-                    type = WIND_DRAG_NAME;
-                    hp = WIND_DRAG_HP;
-                    atk = WIND_DRAG_ATK;
-                    spatk = WIND_DRAG_SPATK;
-                    block = WIND_DRAG_BLOCK;
-                }
-                else if (rbtnEarthDragon1.Checked)
-                {
-                    type = EARTH_DRAG_NAME;
-                    hp = EARTH_DRAG_HP;
-                    atk = EARTH_DRAG_ATK;
-                    spatk = EARTH_DRAG_SPATK;
-                    block = EARTH_DRAG_BLOCK;
-                }
-                SaveValues(PLAYER_NUMBER, playerName, dragonName, type, hp, atk, spatk, block);
-                player1Saved = true;
-                if (player2Saved) UpdateColor(colors["white"], btnStartGame);
-                UpdateColor(colors["green"], pnlPlayer1, lblPlayer1);
-                UpdateColor(colors["lime"], btnSave1);
-            }
+            SaveButtonClick(1, ref player1Saved, player2Saved, txtPlayerName1, txtDragonName1, rbtnFireDragon1, rbtnIceDragon1, rbtnWindDragon1, rbtnEarthDragon1, pnlPlayer1, lblPlayer1, btnSave1);
         }
 
         private void BtnSave2_Click(object sender, EventArgs e)
         {
-            const int PLAYER_NUMBER = 2;
-            string playerName = txtPlayerName2.Text, dragonName = txtDragonName2.Text, type = "";
-            int hp = 0, atk = 0, spatk = 0, block = 0;
+            SaveButtonClick(2, ref player2Saved, player1Saved, txtPlayerName2, txtDragonName2, rbtnFireDragon2, rbtnIceDragon2, rbtnWindDragon2, rbtnEarthDragon2, pnlPlayer2, lblPlayer2, btnSave2);
+        }
+
+        private void SaveButtonClick(int playerNumber, ref bool playerSaved, bool opponentSaved, TextBox txtPlayerName, TextBox txtDragonName, RadioButton rbtnFireDragon, RadioButton rbtnIceDragon, RadioButton rbtnWindDragon, RadioButton rbtnEarthDragon, Panel pnlPlayer, Label lblPlayer, Button btnSave)
+        {
+            string playerName = txtPlayerName.Text, dragonName = txtDragonName.Text;
             if (!String.IsNullOrWhiteSpace(playerName) && !String.IsNullOrWhiteSpace(dragonName))
             {
-                if (rbtnFireDragon2.Checked)
-                {
-                    type = FIRE_DRAG_NAME;
-                    hp = FIRE_DRAG_HP;
-                    atk = FIRE_DRAG_ATK;
-                    spatk = FIRE_DRAG_SPATK;
-                    block = FIRE_DRAG_BLOCK;
-                }
-                else if (rbtnIceDragon2.Checked)
-                {
-                    type = ICE_DRAG_NAME;
-                    hp = ICE_DRAG_HP;
-                    atk = ICE_DRAG_ATK;
-                    spatk = ICE_DRAG_SPATK;
-                    block = ICE_DRAG_BLOCK;
-                }
-                else if (rbtnWindDragon2.Checked)
-                {
-                    type = WIND_DRAG_NAME;
-                    hp = WIND_DRAG_HP;
-                    atk = WIND_DRAG_ATK;
-                    spatk = WIND_DRAG_SPATK;
-                    block = WIND_DRAG_BLOCK;
-                }
-                else if (rbtnEarthDragon2.Checked)
-                {
-                    type = EARTH_DRAG_NAME;
-                    hp = EARTH_DRAG_HP;
-                    atk = EARTH_DRAG_ATK;
-                    spatk = EARTH_DRAG_SPATK;
-                    block = EARTH_DRAG_BLOCK;
-                }
-                SaveValues(PLAYER_NUMBER, playerName, dragonName, type, hp, atk, spatk, block);
-                player2Saved = true;
-                if (player1Saved) UpdateColor(colors["white"], btnStartGame);
-                UpdateColor(colors["green"], pnlPlayer2, lblPlayer2);
-                UpdateColor(colors["lime"], btnSave2);
+                string type = rbtnFireDragon.Checked ? FIRE_DRAG_NAME : (rbtnIceDragon.Checked ? ICE_DRAG_NAME : (rbtnWindDragon.Checked ? WIND_DRAG_NAME : (rbtnEarthDragon.Checked ? EARTH_DRAG_NAME : "")));
+                int[] vals = values[type];
+                SaveValues(playerNumber, playerName, dragonName, type, vals[0], vals[1], vals[2], vals[3]);
+                playerSaved = true;
+                if (opponentSaved) UpdateColor(colors["white"], btnStartGame);
+                UpdateColor(colors["green"], pnlPlayer, lblPlayer);
+                UpdateColor(colors["lime"], btnSave);
             }
         }
 
