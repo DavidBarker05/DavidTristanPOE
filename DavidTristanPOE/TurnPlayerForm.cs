@@ -48,7 +48,7 @@ namespace DavidTristanPOE
 
         }
 
-        private void BtnRest_Click(object sender, System.EventArgs e)
+        private void BtnRest_Click(object sender, EventArgs e)
         {
 
         }
