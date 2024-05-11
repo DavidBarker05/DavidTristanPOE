@@ -68,7 +68,7 @@ namespace DavidTristanPOE
                     damage = atk;
                     blockMessage = "";
                 }
-                hp = hp - damage;
+                hp -= damage;
                 if (hp < 0)
                 {
                     hp = 0;
@@ -98,7 +98,7 @@ namespace DavidTristanPOE
                     damage = atk;
                     blockMessage = "";
                 }
-                hp = hp - damage;
+                hp -= damage;
                 if (hp < 0)
                 {
                     hp = 0;
@@ -138,7 +138,7 @@ namespace DavidTristanPOE
                     damage = spatk;
                     blockMessage = "";
                 }
-                hp = hp - damage;
+                hp -= damage;
                 if (hp < 0)
                 {
                     hp = 0;
@@ -168,7 +168,7 @@ namespace DavidTristanPOE
                     damage = spatk;
                     blockMessage = "";
                 }
-                hp = hp - damage;
+                hp -= damage;
                 if (hp < 0)
                 {
                     hp = 0;
