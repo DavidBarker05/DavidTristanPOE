@@ -59,7 +59,7 @@ namespace DavidTristanPOE
             blockMessage = (playerTurn == 1 ? p2IsBlocking : p1IsBlocking) ? "blocks it and" : "\b";
             // This will display the text in the battle log for when the player chooses to "Attack"
             battleText += $"{attacker} attacks {defender}! {defender} {blockMessage} takes {damage} damage. {defender} is now on {hp} HP\n";
-            battleText += $"--------------------------------------------------------------------------\n";
+            battleText += "--------------------------------------------------------------------------\n";
             lblBattle.Text = battleText;
             SwitchPlayer();
         }
@@ -81,7 +81,7 @@ namespace DavidTristanPOE
             blockMessage = (playerTurn == 1 ? p2IsBlocking : p1IsBlocking) ? "blocks it and" : "\b";
             // This will display the text in the battle log for when the player chooses to "Special Attack"
             battleText += $"{attacker} special attacks {defender}! {defender} {blockMessage} takes {damage} damage. {defender} is now on {hp} HP\n";
-            battleText += $"--------------------------------------------------------------------------\n";
+            battleText += "--------------------------------------------------------------------------\n";
             lblBattle.Text = battleText;
             SwitchPlayer();
         }
@@ -97,7 +97,7 @@ namespace DavidTristanPOE
             p2HasPlayed |= playerTurn == 2;
             // This will display the text in the battle log for when the player chooses to "block"
             battleText += $"{currentDragon} prepares to block {nextDragon}'s next attack\n";
-            battleText += $"--------------------------------------------------------------------------\n";
+            battleText += "--------------------------------------------------------------------------\n";
             lblBattle.Text = battleText;
             SwitchPlayer();
         }
