@@ -56,7 +56,7 @@ namespace DavidTristanPOE
             else p2Values[0] = hp;
             p1HasPlayed |= playerTurn == 1;
             p2HasPlayed |= playerTurn == 2;
-            blockMessage = (playerTurn == 1 ? p2IsBlocking : p1IsBlocking) ? "blocks it and" : "";
+            blockMessage = (playerTurn == 1 ? p2IsBlocking : p1IsBlocking) ? "blocks it and" : "\b";
             // This will display the text in the battle log for when the player chooses to "Attack"
             battleText += $"{attacker} attacks {defender}! {defender} {blockMessage} takes {damage} damage. {defender} is now on {hp} HP\n";
             battleText += $"--------------------------------------------------------------------------\n";
@@ -78,7 +78,7 @@ namespace DavidTristanPOE
             else p2Values[0] = hp;
             p1HasPlayed |= playerTurn == 1;
             p2HasPlayed |= playerTurn == 2;
-            blockMessage = (playerTurn == 1 ? p2IsBlocking : p1IsBlocking) ? "blocks it and" : "";
+            blockMessage = (playerTurn == 1 ? p2IsBlocking : p1IsBlocking) ? "blocks it and" : "\b";
             // This will display the text in the battle log for when the player chooses to "Special Attack"
             battleText += $"{attacker} special attacks {defender}! {defender} {blockMessage} takes {damage} damage. {defender} is now on {hp} HP\n";
             battleText += $"--------------------------------------------------------------------------\n";
