@@ -154,6 +154,7 @@ namespace DavidTristanPOE
             /*
              * NOTE: These are in-text citations (for urls see the reference list in README/References.Docx)
              * 
+             * 
              * In the YouTube video tutorialsEU - C# explains how lambda expressions work and how to use
              * them. He also explains how to use them when manipulating/iterating through arrays, which is
              * what I did here (see Understand C# LAMBDA Expressions in only 2 minutes!, 2023).
@@ -166,7 +167,6 @@ namespace DavidTristanPOE
             UpdateColor(backColor, guiComponents);
             /*
              * NOTE: These are in-text citations (for urls see the reference list in README/References.Docx)
-             * 
              * NOTE+: The reference is the same as seen in the previous UpdateColor method.
              */
             Array.ForEach(guiComponents, guiComponent => guiComponent.ForeColor = foreColor);
