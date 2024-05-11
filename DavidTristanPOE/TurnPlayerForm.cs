@@ -242,7 +242,6 @@ namespace DavidTristanPOE
             {
                 p1HasPlayed = false;
                 p2HasPlayed = false;
-                // NOTE: more to be added with part 3
             }
             playerTurn = 3 - playerTurn; // Invert the value
             string battleText = lblBattle.Text; // Get the text currently stored in the battle log so that we can add text
