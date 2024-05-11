@@ -35,9 +35,9 @@ namespace DavidTristanPOE
             { "cyan", Color.Cyan },
             { "blue", Color.Blue },
             { "silver", Color.Silver },
-            { "darkSlateGray", Color.DarkSlateGray },
-            { "saddleBrown", Color.SaddleBrown },
-            { "limeGreen", Color.LimeGreen }
+            { "dark slate gray", Color.DarkSlateGray },
+            { "saddle brown", Color.SaddleBrown },
+            { "lime green", Color.LimeGreen }
         };
 
         private readonly Dictionary<string, Image> images = new Dictionary<string, Image>()
@@ -102,13 +102,13 @@ namespace DavidTristanPOE
 
         private void RbtnWindDragon1_CheckedChanged(object sender, EventArgs e)
         {
-            UpdateColor(colors["silver"], colors["darkSlateGray"], pnlDragonType1, lblDragonType1, rbtnFireDragon1, rbtnIceDragon1, rbtnWindDragon1, rbtnEarthDragon1);
+            UpdateColor(colors["silver"], colors["dark slate gray"], pnlDragonType1, lblDragonType1, rbtnFireDragon1, rbtnIceDragon1, rbtnWindDragon1, rbtnEarthDragon1);
             picDragon1.Image = images[WIND_DRAG_NAME];
         }
 
         private void RbtnEarthDragon1_CheckedChanged(object sender, EventArgs e)
         {
-            UpdateColor(colors["saddleBrown"], colors["limeGreen"], pnlDragonType1, lblDragonType1, rbtnFireDragon1, rbtnIceDragon1, rbtnWindDragon1, rbtnEarthDragon1);
+            UpdateColor(colors["saddle brown"], colors["lime green"], pnlDragonType1, lblDragonType1, rbtnFireDragon1, rbtnIceDragon1, rbtnWindDragon1, rbtnEarthDragon1);
             picDragon1.Image = images[EARTH_DRAG_NAME];
         }
 
@@ -126,13 +126,13 @@ namespace DavidTristanPOE
 
         private void RbtnWindDragon2_CheckedChanged(object sender, EventArgs e)
         {
-            UpdateColor(colors["silver"], colors["darkSlateGray"], pnlDragonType2, lblDragonType2, rbtnFireDragon2, rbtnIceDragon2, rbtnWindDragon2, rbtnEarthDragon2);
+            UpdateColor(colors["silver"], colors["dark slate gray"], pnlDragonType2, lblDragonType2, rbtnFireDragon2, rbtnIceDragon2, rbtnWindDragon2, rbtnEarthDragon2);
             picDragon2.Image = images[WIND_DRAG_NAME];
         }
 
         private void RbtnEarthDragon2_CheckedChanged(object sender, EventArgs e)
         {
-            UpdateColor(colors["saddleBrown"], colors["limeGreen"], pnlDragonType2, lblDragonType2, rbtnFireDragon2, rbtnIceDragon2, rbtnWindDragon2, rbtnEarthDragon2);
+            UpdateColor(colors["saddle brown"], colors["lime green"], pnlDragonType2, lblDragonType2, rbtnFireDragon2, rbtnIceDragon2, rbtnWindDragon2, rbtnEarthDragon2);
             picDragon2.Image = images[EARTH_DRAG_NAME];
         }
 
