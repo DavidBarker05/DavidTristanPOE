@@ -177,7 +177,6 @@ namespace DavidTristanPOE
                 p2IsResting = true;
                 p2HasPlayed = true;
             }
-
             battleText += $"{attacker} special attacks {defender}! {defender} {blockMessage} takes {damage} damage. {defender} is now on {hp} HP\n";
             battleText += $"--------------------------------------------------------------------------\n";
             lblBattle.Text = battleText;
