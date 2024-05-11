@@ -7,8 +7,8 @@ namespace DavidTristanPOE
     public partial class TurnPlayerForm : Form
     {
 
-        private string[] p1Data, p2Data; //Array for storing player details(data)
-        private int[] p1Values, p2Values; //Aray for storing the dragon's statistics
+        private string[] p1Data, p2Data; // Array for storing player details(data)
+        private int[] p1Values, p2Values; // Aray for storing the dragon's statistics
 
         public PictureBox PicPlayer1Dragon { get { return picPlayer1Dragon; } }
 
