@@ -66,23 +66,27 @@ namespace DavidTristanPOE
 
         private void BtnSave1_Click(object sender, EventArgs e)
         {
+            // Use the general save method but assign values/gui components specific to p1
             SaveButtonClick(1, ref player1Saved, player2Saved, txtPlayerName1, txtDragonName1, pnlPlayer1, lblPlayer1, btnSave1, rbtnFireDragon1, rbtnIceDragon1, rbtnWindDragon1, rbtnEarthDragon1);
         }
 
         private void BtnSave2_Click(object sender, EventArgs e)
         {
+            // Use the general save method but assign values/gui components specific to p1
             SaveButtonClick(2, ref player2Saved, player1Saved, txtPlayerName2, txtDragonName2, pnlPlayer2, lblPlayer2, btnSave2, rbtnFireDragon2, rbtnIceDragon2, rbtnWindDragon2, rbtnEarthDragon2);
         }
 
+        // General method used for saving values for both players that will be called with specific values/gui components according to the player's number in their respective save button methods
         private void SaveButtonClick(int playerNumber, ref bool playerSaved, bool opponentSaved, TextBox txtPlayerName, TextBox txtDragonName, Panel pnlPlayer, Label lblPlayer, Button btnSave, RadioButton rbtnFireDragon, RadioButton rbtnIceDragon, RadioButton rbtnWindDragon, RadioButton rbtnEarthDragon)
         {
-            string playerName = txtPlayerName.Text, dragonName = txtDragonName.Text;
-            if (!String.IsNullOrWhiteSpace(playerName) && !String.IsNullOrWhiteSpace(dragonName))
+            string playerName = txtPlayerName.Text, dragonName = txtDragonName.Text; // Set player name and dragon name
+            if (!String.IsNullOrWhiteSpace(playerName) && !String.IsNullOrWhiteSpace(dragonName)) // Check they're not empty
             {
+                // Set the type according to which radio button is checked
                 string type = rbtnFireDragon.Checked ? FIRE_DRAG_NAME : rbtnIceDragon.Checked ? ICE_DRAG_NAME : rbtnWindDragon.Checked ? WIND_DRAG_NAME : rbtnEarthDragon.Checked ? EARTH_DRAG_NAME : "";
-                int[] vals = values[type];
-                SaveValues(playerNumber, playerName, dragonName, type, vals[0], vals[1], vals[2], vals[3]);
-                playerSaved = true;
+                int[] vals = values[type]; // Get the values according to the type from the dictionary
+                SaveValues(playerNumber, playerName, dragonName, type, vals[0], vals[1], vals[2], vals[3]); // Save those values
+                playerSaved = true; // Set that the player has saved
                 if (opponentSaved) UpdateColor(white, black, btnStartGame); // Update colours of components
                 UpdateColor(green, black, pnlPlayer, lblPlayer); // Update colours of components
                 UpdateColor(lime, black, btnSave); // Update colours of btnSave
