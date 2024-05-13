@@ -166,14 +166,6 @@ namespace DavidTristanPOE
                 battleText += "**************************************************************************\n";
             }
             battleText += $"{player}'s Turn:\n"; // Add who the current player is to the battle log
-            if (hp == 0) // Dragon is dead
-            {
-                btnAttack.Enabled = false; // Disable the attack button if it's dead
-                btnSpAttack.Enabled = false; // Disable the special attack button if it's dead
-                btnBlock.Enabled = false; // Disable the block button if it's dead
-                btnRest.Enabled = false; // Disable the Rest button if it's dead
-                battleText += $"{dragon} is unable to continue. {opponentDragon} is the winner!"; // Add that the current dragon is dead and that the opponent is the winner to battleText
-            }
             lblBattle.Text = battleText; // Updates the battle log to battleText
             lblDragonNameType1.Text = $"{dragon} the {type}'s Turn"; // Update the current dragon's details on the screen
             lblHp1.Text = $"HP: {hp}"; // Update the current dragon's hp on the screen
