@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
 using System.Windows.Forms;
 
 namespace DavidTristanPOE
@@ -44,8 +43,6 @@ namespace DavidTristanPOE
         {
             playerTurn = TakeInitiative(); // Take initiative
             SwitchPlayer(); // This will invert playerTurn which is why the result of TakeInitiative() is the player with the smallest roll
-            p1HasPlayed = p2HasPlayed = true;
-            Debug.WriteLine($"{p1HasPlayed} {p2HasPlayed}");
         }
 
         private void BtnAttack_Click(object sender, EventArgs e)
