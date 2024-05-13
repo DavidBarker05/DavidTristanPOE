@@ -152,7 +152,7 @@ namespace DavidTristanPOE
                 playerTurn = TakeInitiative(); // Retake initiative
             }
             playerTurn = 3 - playerTurn; // Invert the value
-            string battleText = lblBattle.Text; // Get the text currently stored in the battle log so that we can add text
+            string battleText = lblBattle.Text.Replace("Lorem ipsum", ""); // Get the text currently stored in the battle log so that we can add text
             string player = playerTurn == 1 ? p1Data[0] : p2Data[0], dragon = playerTurn == 1 ? p1Data[1] : p2Data[1], type = playerTurn == 1 ? p1Data[2] : p2Data[2]; // Fetch current player's data
             string opponent = playerTurn == 1 ? p2Data[0] : p1Data[0], opponentDragon = playerTurn == 1 ? p2Data[1] : p1Data[1], opponentType = playerTurn == 1 ? p2Data[2] : p1Data[2]; // Fetch opponent's data
             int hp = playerTurn == 1 ? p1Values[0] : p2Values[0], opponentHp = playerTurn == 1 ? p2Values[0] : p1Values[0]; // Fetch the hp of the current dragon and opponent dragon

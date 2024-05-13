@@ -58,7 +58,7 @@
             // 
             this.lblDragonNameType1.AutoSize = true;
             this.lblDragonNameType1.BackColor = System.Drawing.Color.LightGray;
-            this.lblDragonNameType1.Location = new System.Drawing.Point(52, 21);
+            this.lblDragonNameType1.Location = new System.Drawing.Point(33, 21);
             this.lblDragonNameType1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDragonNameType1.Name = "lblDragonNameType1";
             this.lblDragonNameType1.Size = new System.Drawing.Size(105, 13);
@@ -75,7 +75,7 @@
             this.pnlPlayerMove.Controls.Add(this.lblHp1);
             this.pnlPlayerMove.Controls.Add(this.btnAttack);
             this.pnlPlayerMove.Location = new System.Drawing.Point(23, 29);
-            this.pnlPlayerMove.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlPlayerMove.Margin = new System.Windows.Forms.Padding(2);
             this.pnlPlayerMove.Name = "pnlPlayerMove";
             this.pnlPlayerMove.Size = new System.Drawing.Size(162, 187);
             this.pnlPlayerMove.TabIndex = 1;
@@ -95,7 +95,7 @@
             // 
             this.btnBlock.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btnBlock.Location = new System.Drawing.Point(25, 129);
-            this.btnBlock.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBlock.Margin = new System.Windows.Forms.Padding(2);
             this.btnBlock.Name = "btnBlock";
             this.btnBlock.Size = new System.Drawing.Size(113, 37);
             this.btnBlock.TabIndex = 4;
@@ -107,7 +107,7 @@
             // 
             this.btnSpAttack.BackColor = System.Drawing.Color.Goldenrod;
             this.btnSpAttack.Location = new System.Drawing.Point(25, 88);
-            this.btnSpAttack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSpAttack.Margin = new System.Windows.Forms.Padding(2);
             this.btnSpAttack.Name = "btnSpAttack";
             this.btnSpAttack.Size = new System.Drawing.Size(113, 37);
             this.btnSpAttack.TabIndex = 3;
@@ -118,18 +118,18 @@
             // lblHp1
             // 
             this.lblHp1.AutoSize = true;
-            this.lblHp1.Location = new System.Drawing.Point(39, 18);
+            this.lblHp1.Location = new System.Drawing.Point(60, 18);
             this.lblHp1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblHp1.Name = "lblHp1";
-            this.lblHp1.Size = new System.Drawing.Size(82, 13);
+            this.lblHp1.Size = new System.Drawing.Size(43, 13);
             this.lblHp1.TabIndex = 1;
-            this.lblHp1.Text = "HP: HP Amount";
+            this.lblHp1.Text = "HP: HP";
             // 
             // btnAttack
             // 
             this.btnAttack.BackColor = System.Drawing.Color.Firebrick;
             this.btnAttack.Location = new System.Drawing.Point(25, 44);
-            this.btnAttack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAttack.Margin = new System.Windows.Forms.Padding(2);
             this.btnAttack.Name = "btnAttack";
             this.btnAttack.Size = new System.Drawing.Size(113, 40);
             this.btnAttack.TabIndex = 0;
@@ -144,7 +144,7 @@
             this.pnlOpponent.Controls.Add(this.lblHp2);
             this.pnlOpponent.Controls.Add(this.lblDragonNameType2);
             this.pnlOpponent.Location = new System.Drawing.Point(222, 61);
-            this.pnlOpponent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlOpponent.Margin = new System.Windows.Forms.Padding(2);
             this.pnlOpponent.Name = "pnlOpponent";
             this.pnlOpponent.Size = new System.Drawing.Size(199, 116);
             this.pnlOpponent.TabIndex = 2;
@@ -152,17 +152,17 @@
             // lblHp2
             // 
             this.lblHp2.AutoSize = true;
-            this.lblHp2.Location = new System.Drawing.Point(55, 61);
+            this.lblHp2.Location = new System.Drawing.Point(75, 61);
             this.lblHp2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblHp2.Name = "lblHp2";
-            this.lblHp2.Size = new System.Drawing.Size(85, 13);
+            this.lblHp2.Size = new System.Drawing.Size(43, 13);
             this.lblHp2.TabIndex = 1;
-            this.lblHp2.Text = "HP: HP Amount ";
+            this.lblHp2.Text = "HP: HP";
             // 
             // lblDragonNameType2
             // 
             this.lblDragonNameType2.AutoSize = true;
-            this.lblDragonNameType2.Location = new System.Drawing.Point(40, 25);
+            this.lblDragonNameType2.Location = new System.Drawing.Point(10, 25);
             this.lblDragonNameType2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDragonNameType2.Name = "lblDragonNameType2";
             this.lblDragonNameType2.Size = new System.Drawing.Size(109, 13);
@@ -175,7 +175,7 @@
             this.pnlBattleLog.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlBattleLog.Controls.Add(this.pnlBattleLogReport);
             this.pnlBattleLog.Location = new System.Drawing.Point(8, 237);
-            this.pnlBattleLog.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlBattleLog.Margin = new System.Windows.Forms.Padding(2);
             this.pnlBattleLog.Name = "pnlBattleLog";
             this.pnlBattleLog.Size = new System.Drawing.Size(583, 242);
             this.pnlBattleLog.TabIndex = 3;
@@ -187,7 +187,7 @@
             this.pnlBattleLogReport.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pnlBattleLogReport.Controls.Add(this.lblBattle);
             this.pnlBattleLogReport.Location = new System.Drawing.Point(11, 18);
-            this.pnlBattleLogReport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlBattleLogReport.Margin = new System.Windows.Forms.Padding(2);
             this.pnlBattleLogReport.Name = "pnlBattleLogReport";
             this.pnlBattleLogReport.Size = new System.Drawing.Size(565, 218);
             this.pnlBattleLogReport.TabIndex = 0;
@@ -195,9 +195,10 @@
             // lblBattle
             // 
             this.lblBattle.AutoSize = true;
+            this.lblBattle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBattle.Location = new System.Drawing.Point(0, 0);
             this.lblBattle.Name = "lblBattle";
-            this.lblBattle.Size = new System.Drawing.Size(66, 13);
+            this.lblBattle.Size = new System.Drawing.Size(80, 15);
             this.lblBattle.TabIndex = 0;
             this.lblBattle.Text = "Lorem ipsum";
             // 
@@ -206,7 +207,7 @@
             this.lblOpponent.AutoSize = true;
             this.lblOpponent.BackColor = System.Drawing.Color.Maroon;
             this.lblOpponent.ForeColor = System.Drawing.Color.White;
-            this.lblOpponent.Location = new System.Drawing.Point(277, 54);
+            this.lblOpponent.Location = new System.Drawing.Point(232, 54);
             this.lblOpponent.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblOpponent.Name = "lblOpponent";
             this.lblOpponent.Size = new System.Drawing.Size(86, 13);
@@ -227,7 +228,7 @@
             // picPlayer1Dragon
             // 
             this.picPlayer1Dragon.Location = new System.Drawing.Point(453, 8);
-            this.picPlayer1Dragon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picPlayer1Dragon.Margin = new System.Windows.Forms.Padding(2);
             this.picPlayer1Dragon.Name = "picPlayer1Dragon";
             this.picPlayer1Dragon.Size = new System.Drawing.Size(121, 104);
             this.picPlayer1Dragon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -247,7 +248,7 @@
             // picPlayer2Dragon
             // 
             this.picPlayer2Dragon.Location = new System.Drawing.Point(453, 129);
-            this.picPlayer2Dragon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picPlayer2Dragon.Margin = new System.Windows.Forms.Padding(2);
             this.picPlayer2Dragon.Name = "picPlayer2Dragon";
             this.picPlayer2Dragon.Size = new System.Drawing.Size(121, 104);
             this.picPlayer2Dragon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
