@@ -9,17 +9,18 @@ namespace DavidTristanPOE
         private string[] p1Data, p2Data; // Array for storing player details(data)
         private int[] p1Values, p2Values; // Aray for storing the dragon's statistics
 
-        public PictureBox PicPlayer1Dragon { get { return picPlayer1Dragon; } }
+        public PictureBox PicPlayer1Dragon { get { return picPlayer1Dragon; } } // Getter property for picPlayer1Dragon
 
-        public PictureBox PicPlayer2Dragon { get { return picPlayer2Dragon; } }
+        public PictureBox PicPlayer2Dragon { get { return picPlayer2Dragon; } } // Getter property for picPlayer2Dragon
 
-        private int playerTurn;
+        private int playerTurn; // The player number for who's turn it currently is
+        // Bools to check if the player is blocking or has played this round
         private bool p1IsBlocking = false, p2IsBlocking = false, p1HasPlayed = false, p2HasPlayed = false;
 
         public TurnPlayerForm()
         {
             InitializeComponent();
-            btnRest.Visible = false;
+            btnRest.Visible = false; // Hide the rest button
             /*
              * NOTE: These are in-text citations (for urls see the reference list in README/References.Docx)
              * 
