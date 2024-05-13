@@ -20,7 +20,6 @@ namespace DavidTristanPOE
         public TurnPlayerForm()
         {
             InitializeComponent();
-            btnRest.Visible = false; // Hide the rest button
             /*
              * NOTE: These are in-text citations (for urls see the reference list in README/References.Docx)
              * 
