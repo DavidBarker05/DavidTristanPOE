@@ -104,7 +104,7 @@ namespace DavidTristanPOE
 
         private void BtnRest_Click(object sender, EventArgs e)
         {
-            // To-do: Rest method
+            // To-do: Rest method (Done with part 3)
         }
 
         private int TakeInitiative()
@@ -137,7 +137,7 @@ namespace DavidTristanPOE
             {
                 p1HasPlayed = false;
                 p2HasPlayed = false;
-                playerTurn = TakeInitiative(); // Reake initiative
+                playerTurn = TakeInitiative(); // Retake initiative
             }
             playerTurn = 3 - playerTurn; // Invert the value
             string battleText = lblBattle.Text; // Get the text currently stored in the battle log so that we can add text
