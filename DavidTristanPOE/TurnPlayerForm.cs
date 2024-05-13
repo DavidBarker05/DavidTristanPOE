@@ -119,7 +119,7 @@ namespace DavidTristanPOE
         private int TakeInitiative()
         {
             int p1Roll = RandomRoll(), p2Roll = RandomRoll(); // 'Roll a dice' for each player
-            if (p1Roll == p2Roll) // If they're the same we we 'reroll'
+            while (p1Roll == p2Roll) // If they're the same we we 'reroll'
             {
                 p1Roll = RandomRoll();
                 p2Roll = RandomRoll();
