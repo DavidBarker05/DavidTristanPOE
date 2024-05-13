@@ -49,7 +49,7 @@ namespace DavidTristanPOE
         private void BtnAttack_Click(object sender, EventArgs e)
         {
             // Declerations for "Attack" button
-            int hp = playerTurn == 1 ? p1Values[0] : p2Values[0], atk = playerTurn == 1 ? p1Values[1] : p2Values[1], block = playerTurn == 1 ? p1Values[3] : p1Values[3], damage;
+            int hp = playerTurn == 1 ? p2Values[0] : p1Values[0], atk = playerTurn == 1 ? p1Values[1] : p2Values[1], block = playerTurn == 1 ? p2Values[3] : p1Values[3], damage;
             string attacker = playerTurn == 1 ? p1Data[1] : p2Data[1], defender = playerTurn == 1 ? p2Data[1] : p1Data[1], battleText = lblBattle.Text, blockMessage;
             // Conditional operator used to determine how much damage will be dealt from the player to the opponent depending on if the opponent blocks
             damage = (playerTurn == 1 ? p2IsBlocking : p1IsBlocking) ? atk - block : atk;
@@ -58,7 +58,7 @@ namespace DavidTristanPOE
             if (hp < 0) hp = 0; // Lock hp to 0 or greater
             // Set the hp stat in the array to the hp value
             if (playerTurn == 1) p2Values[0] = hp;
-            else p2Values[0] = hp;
+            else p1Values[0] = hp;
             // Set that the player has played if it's their turn
             p1HasPlayed |= playerTurn == 1;
             p2HasPlayed |= playerTurn == 2;
@@ -73,7 +73,7 @@ namespace DavidTristanPOE
         private void BtnSpAttack_Click(object sender, EventArgs e)
         {
             // Declerations for "Special Attack" button
-            int hp = playerTurn == 1 ? p1Values[0] : p2Values[0], spatk = playerTurn == 1 ? p1Values[2] : p2Values[2], block = playerTurn == 1 ? p1Values[3] : p1Values[3], damage;
+            int hp = playerTurn == 1 ? p2Values[0] : p1Values[0], spatk = playerTurn == 1 ? p1Values[2] : p2Values[2], block = playerTurn == 1 ? p2Values[3] : p1Values[3], damage;
             string attacker = playerTurn == 1 ? p1Data[1] : p2Data[1], defender = playerTurn == 1 ? p2Data[1] : p1Data[1], battleText = lblBattle.Text, blockMessage;
             // Conditional operator used to determine how much damage will be dealt from the player to the opponent if they do a special attack and depending on if the opponent blocks
             damage = (playerTurn == 1 ? p2IsBlocking : p1IsBlocking) ? spatk - block : spatk;
@@ -82,7 +82,7 @@ namespace DavidTristanPOE
             if (hp < 0) hp = 0; // Lock hp to 0 or greater
             // Set the hp stat in the array to the hp value
             if (playerTurn == 1) p2Values[0] = hp;
-            else p2Values[0] = hp;
+            else p1Values[0] = hp;
             // Set that the player has played if it's their turn
             p1HasPlayed |= playerTurn == 1;
             p2HasPlayed |= playerTurn == 2;
