@@ -31,24 +31,14 @@ namespace DavidTristanPOE
         private bool player1Saved = false, player2Saved = false;
 
         // Colours used when changing colours in StartGameForm
-        private static readonly Color white = Color.White;
-        private static readonly Color black = Color.Black;
-        private static readonly Color green = Color.Green;
-        private static readonly Color lime = Color.Lime;
-        private static readonly Color red = Color.Red;
-        private static readonly Color yellow = Color.Yellow;
-        private static readonly Color cyan = Color.Cyan;
-        private static readonly Color blue = Color.Blue;
-        private static readonly Color silver = Color.Silver;
-        private static readonly Color darkSlateGray = Color.DarkSlateGray;
-        private static readonly Color saddleBrown = Color.SaddleBrown;
-        private static readonly Color limeGreen = Color.LimeGreen;
+        private static readonly Color white = Color.White, green = Color.Green, lime = Color.Lime, black = Color.Black;
+        private static readonly Color red = Color.Red, yellow = Color.Yellow;
+        private static readonly Color cyan = Color.Cyan, blue = Color.Blue;
+        private static readonly Color silver = Color.Silver, darkSlateGray = Color.DarkSlateGray;
+        private static readonly Color saddleBrown = Color.SaddleBrown, limeGreen = Color.LimeGreen;
 
         // Dragon images
-        private static readonly Image fireDragImg = Properties.Resources.Fire_Dragon;
-        private static readonly Image iceDragImg = Properties.Resources.Ice_Dragon;
-        private static readonly Image windDragImg = Properties.Resources.Wind_Dragon;
-        private static readonly Image earthDragImg = Properties.Resources.Earth_Dragon;
+        private static readonly Image fireDragImg = Properties.Resources.Fire_Dragon, iceDragImg = Properties.Resources.Ice_Dragon, windDragImg = Properties.Resources.Wind_Dragon, earthDragImg = Properties.Resources.Earth_Dragon;
         // Dictionary lookup to get the dragon image according to its type
         private static readonly Dictionary<string, Image> images = new Dictionary<string, Image>()
         {
