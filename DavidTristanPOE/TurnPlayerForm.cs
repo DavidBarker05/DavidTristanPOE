@@ -114,7 +114,11 @@ namespace DavidTristanPOE
         private int TakeInitiative()
         {
             int p1Roll = RandomRoll(), p2Roll = RandomRoll(); // 'Roll a dice' for each player
-            if (p1Roll == p2Roll) TakeInitiative(); // If they're the same we retake initiative (we 'reroll')
+            if (p1Roll == p2Roll) // If they're the same we we 'reroll'
+            {
+                p1Roll = RandomRoll();
+                p2Roll = RandomRoll();
+            }
             return p1Roll > p2Roll ? 2 : 1; // Inverted so that when SwitchPlayer() is called after takeInitiative(), it will invert to the correct starting player
         }
 
