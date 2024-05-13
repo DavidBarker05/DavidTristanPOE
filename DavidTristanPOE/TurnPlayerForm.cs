@@ -52,14 +52,16 @@ namespace DavidTristanPOE
             string attacker = playerTurn == 1 ? p1Data[1] : p2Data[1], defender = playerTurn == 1 ? p2Data[1] : p1Data[1], battleText = lblBattle.Text, blockMessage;
             // Conditional operator used to determine how much damage will be dealt from the player to the opponent depending on if the opponent blocks
             damage = (playerTurn == 1 ? p2IsBlocking : p1IsBlocking) ? atk - block : atk;
-            if (damage < 0) damage = 0;
-            hp -= damage;
-            if (hp < 0) hp = 0;
+            if (damage < 0) damage = 0; // Lock damage to be 0 or greater so that when hp is damage opponent can't gain hp
+            hp -= damage; // Take damage
+            if (hp < 0) hp = 0; // Lock hp to 0 or greater
+            // Set the hp stat in the array to the hp value
             if (playerTurn == 1) p2Values[0] = hp;
             else p2Values[0] = hp;
+            // Set that the player has played if it's their turn
             p1HasPlayed |= playerTurn == 1;
             p2HasPlayed |= playerTurn == 2;
-            blockMessage = (playerTurn == 1 ? p2IsBlocking : p1IsBlocking) ? "blocks it and" : "\b";
+            blockMessage = (playerTurn == 1 ? p2IsBlocking : p1IsBlocking) ? "blocks it and" : "\b"; // Update the message if the opponent blocks
             // This will display the text in the battle log for when the player chooses to "Attack"
             battleText += $"{attacker} attacks {defender}! {defender} {blockMessage} takes {damage} damage. {defender} is now on {hp} HP\n";
             battleText += "--------------------------------------------------------------------------\n";
@@ -74,14 +76,16 @@ namespace DavidTristanPOE
             string attacker = playerTurn == 1 ? p1Data[1] : p2Data[1], defender = playerTurn == 1 ? p2Data[1] : p1Data[1], battleText = lblBattle.Text, blockMessage;
             // Conditional operator used to determine how much damage will be dealt from the player to the opponent if they do a special attack and depending on if the opponent blocks
             damage = (playerTurn == 1 ? p2IsBlocking : p1IsBlocking) ? spatk - block : spatk;
-            if (damage < 0) damage = 0;
-            hp -= damage;
-            if (hp < 0) hp = 0;
+            if (damage < 0) damage = 0; // Lock damage to be 0 or greater so that when hp is damage opponent can't gain hp
+            hp -= damage; // Take damage
+            if (hp < 0) hp = 0; // Lock hp to 0 or greater
+            // Set the hp stat in the array to the hp value
             if (playerTurn == 1) p2Values[0] = hp;
             else p2Values[0] = hp;
+            // Set that the player has played if it's their turn
             p1HasPlayed |= playerTurn == 1;
             p2HasPlayed |= playerTurn == 2;
-            blockMessage = (playerTurn == 1 ? p2IsBlocking : p1IsBlocking) ? "blocks it and" : "\b";
+            blockMessage = (playerTurn == 1 ? p2IsBlocking : p1IsBlocking) ? "blocks it and" : "\b"; // Update the message if the opponent blocks
             // This will display the text in the battle log for when the player chooses to "Special Attack"
             battleText += $"{attacker} special attacks {defender}! {defender} {blockMessage} takes {damage} damage. {defender} is now on {hp} HP\n";
             battleText += "--------------------------------------------------------------------------\n";
@@ -96,6 +100,7 @@ namespace DavidTristanPOE
             // Set whether the player is blocking the next player's/opponent's move or not
             p1IsBlocking |= playerTurn == 1;
             p2IsBlocking |= playerTurn == 2;
+            // Set that the player has played if it's their turn
             p1HasPlayed |= playerTurn == 1;
             p2HasPlayed |= playerTurn == 2;
             // This will display the text in the battle log for when the player chooses to "block"
