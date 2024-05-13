@@ -92,61 +92,61 @@ namespace DavidTristanPOE
         private void RbtnFireDragon1_CheckedChanged(object sender, EventArgs e)
         {
             UpdateColor(red, yellow, pnlDragonType1, lblDragonType1, rbtnFireDragon1, rbtnIceDragon1, rbtnWindDragon1, rbtnEarthDragon1); // Update colours of components
-            picDragon1.Image = images[FIRE_DRAG_NAME];
+            picDragon1.Image = images[FIRE_DRAG_NAME]; // Set p1's dragon's picture to the Fire Dragon's image
         }
 
         private void RbtnIceDragon1_CheckedChanged(object sender, EventArgs e)
         {
             UpdateColor(cyan, blue, pnlDragonType1, lblDragonType1, rbtnFireDragon1, rbtnIceDragon1, rbtnWindDragon1, rbtnEarthDragon1); // Update colours of components
-            picDragon1.Image = images[ICE_DRAG_NAME];
+            picDragon1.Image = images[ICE_DRAG_NAME]; // Set p1's dragon's picture to the Ice Dragon's image
         }
 
         private void RbtnWindDragon1_CheckedChanged(object sender, EventArgs e)
         {
             UpdateColor(silver, darkSlateGray, pnlDragonType1, lblDragonType1, rbtnFireDragon1, rbtnIceDragon1, rbtnWindDragon1, rbtnEarthDragon1); // Update colours of components
-            picDragon1.Image = images[WIND_DRAG_NAME];
+            picDragon1.Image = images[WIND_DRAG_NAME]; // Set p1's dragon's picture to the Wind Dragon's image
         }
 
         private void RbtnEarthDragon1_CheckedChanged(object sender, EventArgs e)
         {
             UpdateColor(saddleBrown, limeGreen, pnlDragonType1, lblDragonType1, rbtnFireDragon1, rbtnIceDragon1, rbtnWindDragon1, rbtnEarthDragon1); // Update colours of components
-            picDragon1.Image = images[EARTH_DRAG_NAME];
+            picDragon1.Image = images[EARTH_DRAG_NAME]; // Set p1's dragon's picture to the Earth Dragon's image
         }
 
         private void RbtnFireDragon2_CheckedChanged(object sender, EventArgs e)
         {
             UpdateColor(red, yellow, pnlDragonType2, lblDragonType2, rbtnFireDragon2, rbtnIceDragon2, rbtnWindDragon2, rbtnEarthDragon2); // Update colours of components
-            picDragon2.Image = images[FIRE_DRAG_NAME];
+            picDragon2.Image = images[FIRE_DRAG_NAME]; // Set p2's dragon's picture to the Fire Dragon's image
         }
 
         private void RbtnIceDragon2_CheckedChanged(object sender, EventArgs e)
         {
             UpdateColor(cyan, blue, pnlDragonType2, lblDragonType2, rbtnFireDragon2, rbtnIceDragon2, rbtnWindDragon2, rbtnEarthDragon2); // Update colours of components
-            picDragon2.Image = images[ICE_DRAG_NAME];
+            picDragon2.Image = images[ICE_DRAG_NAME]; // Set p2's dragon's picture to the Ice Dragon's image
         }
 
         private void RbtnWindDragon2_CheckedChanged(object sender, EventArgs e)
         {
             UpdateColor(silver, darkSlateGray, pnlDragonType2, lblDragonType2, rbtnFireDragon2, rbtnIceDragon2, rbtnWindDragon2, rbtnEarthDragon2); // Update colours of components
-            picDragon2.Image = images[WIND_DRAG_NAME];
+            picDragon2.Image = images[WIND_DRAG_NAME]; // Set p2's dragon's picture to the Wind Dragon's image
         }
 
         private void RbtnEarthDragon2_CheckedChanged(object sender, EventArgs e)
         {
             UpdateColor(saddleBrown, limeGreen, pnlDragonType2, lblDragonType2, rbtnFireDragon2, rbtnIceDragon2, rbtnWindDragon2, rbtnEarthDragon2); // Update colours of components
-            picDragon2.Image = images[EARTH_DRAG_NAME];
+            picDragon2.Image = images[EARTH_DRAG_NAME]; // Set p2's dragon's picture to the Earth Dragon's image
         }
 
         private void BtnStartGame_Click(object sender, EventArgs e)
         {
-            if (player1Saved && player2Saved)
+            if (player1Saved && player2Saved) // Both players have saved
             {
-                TurnPlayerForm turnPlayerForm = new TurnPlayerForm();
-                turnPlayerForm.SaveValues(p1Data, p2Data, p1Values, p2Values);
-                turnPlayerForm.PicPlayer1Dragon.Image = images[p1Data[2]];
-                turnPlayerForm.PicPlayer2Dragon.Image = images[p2Data[2]];
-                turnPlayerForm.Show();
-                Hide();
+                TurnPlayerForm turnPlayerForm = new TurnPlayerForm(); // Create a new TurnPlayerForm
+                turnPlayerForm.SaveValues(p1Data, p2Data, p1Values, p2Values); // Save the array values to that form
+                turnPlayerForm.PicPlayer1Dragon.Image = images[p1Data[2]]; // Update the image of p1's dragon on that form to the correct dragon
+                turnPlayerForm.PicPlayer2Dragon.Image = images[p2Data[2]]; // Update the image of p2's dragon on that form to the correct dragon
+                turnPlayerForm.Show(); // Show that form
+                Hide(); // Hide this form
             }
         }
 
@@ -168,7 +168,7 @@ namespace DavidTristanPOE
         // Method used to update the background and foreground colours of gui components
         private void UpdateColor(Color backColor, Color foreColor, params Control[] guiComponents)
         {
-            foreach (Control guiComponent in guiComponents)
+            foreach (Control guiComponent in guiComponents) // Go through each gui component given in the parameters
             {
                 guiComponent.BackColor = backColor;
                 guiComponent.ForeColor = foreColor;
