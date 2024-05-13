@@ -92,49 +92,49 @@ namespace DavidTristanPOE
         private void RbtnFireDragon1_CheckedChanged(object sender, EventArgs e)
         {
             UpdateColor(red, yellow, pnlDragonType1, lblDragonType1, rbtnFireDragon1, rbtnIceDragon1, rbtnWindDragon1, rbtnEarthDragon1); // Update colours of components
-            picDragon1.Image = images[FIRE_DRAG_NAME]; // Set p1's dragon's picture to the Fire Dragon's image
+            picDragon1.Image = fireDragImg; // Set p1's dragon's picture to the Fire Dragon's image
         }
 
         private void RbtnIceDragon1_CheckedChanged(object sender, EventArgs e)
         {
             UpdateColor(cyan, blue, pnlDragonType1, lblDragonType1, rbtnFireDragon1, rbtnIceDragon1, rbtnWindDragon1, rbtnEarthDragon1); // Update colours of components
-            picDragon1.Image = images[ICE_DRAG_NAME]; // Set p1's dragon's picture to the Ice Dragon's image
+            picDragon1.Image = iceDragImg; // Set p1's dragon's picture to the Ice Dragon's image
         }
 
         private void RbtnWindDragon1_CheckedChanged(object sender, EventArgs e)
         {
             UpdateColor(silver, darkSlateGray, pnlDragonType1, lblDragonType1, rbtnFireDragon1, rbtnIceDragon1, rbtnWindDragon1, rbtnEarthDragon1); // Update colours of components
-            picDragon1.Image = images[WIND_DRAG_NAME]; // Set p1's dragon's picture to the Wind Dragon's image
+            picDragon1.Image = windDragImg; // Set p1's dragon's picture to the Wind Dragon's image
         }
 
         private void RbtnEarthDragon1_CheckedChanged(object sender, EventArgs e)
         {
             UpdateColor(saddleBrown, limeGreen, pnlDragonType1, lblDragonType1, rbtnFireDragon1, rbtnIceDragon1, rbtnWindDragon1, rbtnEarthDragon1); // Update colours of components
-            picDragon1.Image = images[EARTH_DRAG_NAME]; // Set p1's dragon's picture to the Earth Dragon's image
+            picDragon1.Image = earthDragImg; // Set p1's dragon's picture to the Earth Dragon's image
         }
 
         private void RbtnFireDragon2_CheckedChanged(object sender, EventArgs e)
         {
             UpdateColor(red, yellow, pnlDragonType2, lblDragonType2, rbtnFireDragon2, rbtnIceDragon2, rbtnWindDragon2, rbtnEarthDragon2); // Update colours of components
-            picDragon2.Image = images[FIRE_DRAG_NAME]; // Set p2's dragon's picture to the Fire Dragon's image
+            picDragon2.Image = fireDragImg; // Set p2's dragon's picture to the Fire Dragon's image
         }
 
         private void RbtnIceDragon2_CheckedChanged(object sender, EventArgs e)
         {
             UpdateColor(cyan, blue, pnlDragonType2, lblDragonType2, rbtnFireDragon2, rbtnIceDragon2, rbtnWindDragon2, rbtnEarthDragon2); // Update colours of components
-            picDragon2.Image = images[ICE_DRAG_NAME]; // Set p2's dragon's picture to the Ice Dragon's image
+            picDragon2.Image = iceDragImg; // Set p2's dragon's picture to the Ice Dragon's image
         }
 
         private void RbtnWindDragon2_CheckedChanged(object sender, EventArgs e)
         {
             UpdateColor(silver, darkSlateGray, pnlDragonType2, lblDragonType2, rbtnFireDragon2, rbtnIceDragon2, rbtnWindDragon2, rbtnEarthDragon2); // Update colours of components
-            picDragon2.Image = images[WIND_DRAG_NAME]; // Set p2's dragon's picture to the Wind Dragon's image
+            picDragon2.Image = windDragImg; // Set p2's dragon's picture to the Wind Dragon's image
         }
 
         private void RbtnEarthDragon2_CheckedChanged(object sender, EventArgs e)
         {
             UpdateColor(saddleBrown, limeGreen, pnlDragonType2, lblDragonType2, rbtnFireDragon2, rbtnIceDragon2, rbtnWindDragon2, rbtnEarthDragon2); // Update colours of components
-            picDragon2.Image = images[EARTH_DRAG_NAME]; // Set p2's dragon's picture to the Earth Dragon's image
+            picDragon2.Image = earthDragImg; // Set p2's dragon's picture to the Earth Dragon's image
         }
 
         private void BtnStartGame_Click(object sender, EventArgs e)
