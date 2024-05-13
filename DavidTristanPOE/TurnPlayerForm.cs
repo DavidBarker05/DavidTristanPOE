@@ -25,8 +25,8 @@ namespace DavidTristanPOE
              * NOTE: These are in-text citations (for urls see the reference list in README/References.Docx)
              * 
              * 
-             * Closing the second form wouldn't exit the application. So, we needed to force an exit while it
-             * was closing, Microsoft ([s.a.]) demonstrates how to access this moment using the 
+             * Closing the second form wouldn't exit the application. So, we needed to force an exit while
+             * it was closing, Microsoft ([s.a.]) demonstrates how to access this moment using the 
              * Form.FormClosing Event in the API.
              * 
              * In order to use Application.Exit() a method of sorts that folows FormClosingEventHandler
