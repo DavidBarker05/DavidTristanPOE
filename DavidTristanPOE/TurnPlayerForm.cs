@@ -38,6 +38,10 @@ namespace DavidTristanPOE
              * Basics, Lambda, Action, Func), 2020).
              */
             FormClosing += (object sender, FormClosingEventArgs e) => Application.Exit();
+        }
+
+        private void TurnPlayerForm_Load(object sender, EventArgs e)
+        {
             playerTurn = TakeInitiative(); // Take initiative
             SwitchPlayer(); // This will invert playerTurn which is why the result of TakeInitiative() is the player with the smallest roll
         }
