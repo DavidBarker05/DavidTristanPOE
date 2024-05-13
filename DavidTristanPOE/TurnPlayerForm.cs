@@ -64,8 +64,8 @@ namespace DavidTristanPOE
             // This will display the text in the battle log for when the player chooses to "Attack"
             battleText += $"{attacker} attacks {defender}! {defender} {blockMessage} takes {damage} damage. {defender} is now on {hp} HP\n";
             battleText += "--------------------------------------------------------------------------\n";
-            lblBattle.Text = battleText;
-            SwitchPlayer();
+            lblBattle.Text = battleText;// Set the battle log's text
+            SwitchPlayer(); // Switch turns
         }
 
         private void BtnSpAttack_Click(object sender, EventArgs e)
@@ -86,8 +86,8 @@ namespace DavidTristanPOE
             // This will display the text in the battle log for when the player chooses to "Special Attack"
             battleText += $"{attacker} special attacks {defender}! {defender} {blockMessage} takes {damage} damage. {defender} is now on {hp} HP\n";
             battleText += "--------------------------------------------------------------------------\n";
-            lblBattle.Text = battleText;
-            SwitchPlayer();
+            lblBattle.Text = battleText;// Set the battle log's text
+            SwitchPlayer(); // Switch turns
         }
 
         private void BtnBlock_Click(object sender, EventArgs e)
@@ -102,8 +102,8 @@ namespace DavidTristanPOE
             // This will display the text in the battle log for when the player chooses to "block"
             battleText += $"{currentDragon} prepares to block {nextDragon}'s next attack\n";
             battleText += "--------------------------------------------------------------------------\n";
-            lblBattle.Text = battleText;
-            SwitchPlayer();
+            lblBattle.Text = battleText; // Set the battle log's text
+            SwitchPlayer(); // Switch turns
         }
 
         private void BtnRest_Click(object sender, EventArgs e)
@@ -130,7 +130,7 @@ namespace DavidTristanPOE
             return random.Next(MIN, MAX + 1); // Random number from 1-6. NOTE: Min inclusive & max exclusive, hence 'MAX + 1'
         }
 
-
+        // Save the arrays from the StartGameForm into this form
         public void SaveValues(string[] p1Data, string[] p2Data, int[] p1Values, int[] p2Values)
         {
             this.p1Data = p1Data;
