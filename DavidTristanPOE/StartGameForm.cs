@@ -60,8 +60,6 @@ namespace DavidTristanPOE
         public StartGameForm()
         {
             InitializeComponent();
-            rbtnFireDragon1.Select(); // Select Fire Dragon by default for p1
-            rbtnFireDragon2.Select(); // Select Fire Dragon by default for p2
         }
 
         private void BtnSave1_Click(object sender, EventArgs e)

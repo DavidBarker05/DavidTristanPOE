@@ -90,6 +90,7 @@
             // 
             // picDragon1
             // 
+            this.picDragon1.Image = global::DavidTristanPOE.Properties.Resources.Fire_Dragon;
             this.picDragon1.Location = new System.Drawing.Point(87, 218);
             this.picDragon1.Name = "picDragon1";
             this.picDragon1.Size = new System.Drawing.Size(85, 85);
@@ -111,8 +112,9 @@
             // lblDragonType1
             // 
             this.lblDragonType1.AutoSize = true;
-            this.lblDragonType1.BackColor = System.Drawing.Color.LightGray;
+            this.lblDragonType1.BackColor = System.Drawing.Color.Red;
             this.lblDragonType1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDragonType1.ForeColor = System.Drawing.Color.Yellow;
             this.lblDragonType1.Location = new System.Drawing.Point(20, 79);
             this.lblDragonType1.Name = "lblDragonType1";
             this.lblDragonType1.Size = new System.Drawing.Size(77, 15);
@@ -121,11 +123,13 @@
             // 
             // pnlDragonType1
             // 
+            this.pnlDragonType1.BackColor = System.Drawing.Color.Red;
             this.pnlDragonType1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlDragonType1.Controls.Add(this.rbtnEarthDragon1);
             this.pnlDragonType1.Controls.Add(this.rbtnWindDragon1);
             this.pnlDragonType1.Controls.Add(this.rbtnIceDragon1);
             this.pnlDragonType1.Controls.Add(this.rbtnFireDragon1);
+            this.pnlDragonType1.ForeColor = System.Drawing.Color.Yellow;
             this.pnlDragonType1.Location = new System.Drawing.Point(10, 87);
             this.pnlDragonType1.Name = "pnlDragonType1";
             this.pnlDragonType1.Size = new System.Drawing.Size(239, 121);
@@ -139,7 +143,6 @@
             this.rbtnEarthDragon1.Name = "rbtnEarthDragon1";
             this.rbtnEarthDragon1.Size = new System.Drawing.Size(98, 19);
             this.rbtnEarthDragon1.TabIndex = 3;
-            this.rbtnEarthDragon1.TabStop = true;
             this.rbtnEarthDragon1.Text = "Earth Dragon";
             this.rbtnEarthDragon1.UseVisualStyleBackColor = true;
             this.rbtnEarthDragon1.CheckedChanged += new System.EventHandler(this.RbtnEarthDragon1_CheckedChanged);
@@ -152,7 +155,6 @@
             this.rbtnWindDragon1.Name = "rbtnWindDragon1";
             this.rbtnWindDragon1.Size = new System.Drawing.Size(97, 19);
             this.rbtnWindDragon1.TabIndex = 2;
-            this.rbtnWindDragon1.TabStop = true;
             this.rbtnWindDragon1.Text = "Wind Dragon";
             this.rbtnWindDragon1.UseVisualStyleBackColor = true;
             this.rbtnWindDragon1.CheckedChanged += new System.EventHandler(this.RbtnWindDragon1_CheckedChanged);
@@ -165,7 +167,6 @@
             this.rbtnIceDragon1.Name = "rbtnIceDragon1";
             this.rbtnIceDragon1.Size = new System.Drawing.Size(85, 19);
             this.rbtnIceDragon1.TabIndex = 1;
-            this.rbtnIceDragon1.TabStop = true;
             this.rbtnIceDragon1.Text = "Ice Dragon";
             this.rbtnIceDragon1.UseVisualStyleBackColor = true;
             this.rbtnIceDragon1.CheckedChanged += new System.EventHandler(this.RbtnIceDragon1_CheckedChanged);
@@ -173,6 +174,7 @@
             // rbtnFireDragon1
             // 
             this.rbtnFireDragon1.AutoSize = true;
+            this.rbtnFireDragon1.Checked = true;
             this.rbtnFireDragon1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtnFireDragon1.Location = new System.Drawing.Point(15, 15);
             this.rbtnFireDragon1.Name = "rbtnFireDragon1";
@@ -252,6 +254,7 @@
             // 
             // picDragon2
             // 
+            this.picDragon2.Image = global::DavidTristanPOE.Properties.Resources.Fire_Dragon;
             this.picDragon2.Location = new System.Drawing.Point(87, 218);
             this.picDragon2.Name = "picDragon2";
             this.picDragon2.Size = new System.Drawing.Size(85, 85);
@@ -273,7 +276,9 @@
             // lblDragonType2
             // 
             this.lblDragonType2.AutoSize = true;
+            this.lblDragonType2.BackColor = System.Drawing.Color.Red;
             this.lblDragonType2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDragonType2.ForeColor = System.Drawing.Color.Yellow;
             this.lblDragonType2.Location = new System.Drawing.Point(20, 78);
             this.lblDragonType2.Name = "lblDragonType2";
             this.lblDragonType2.Size = new System.Drawing.Size(77, 15);
@@ -282,6 +287,7 @@
             // 
             // pnlDragonType2
             // 
+            this.pnlDragonType2.BackColor = System.Drawing.Color.Red;
             this.pnlDragonType2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlDragonType2.Controls.Add(this.rbtnEarthDragon2);
             this.pnlDragonType2.Controls.Add(this.rbtnWindDragon2);
@@ -296,11 +302,11 @@
             // 
             this.rbtnEarthDragon2.AutoSize = true;
             this.rbtnEarthDragon2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnEarthDragon2.ForeColor = System.Drawing.Color.Yellow;
             this.rbtnEarthDragon2.Location = new System.Drawing.Point(15, 89);
             this.rbtnEarthDragon2.Name = "rbtnEarthDragon2";
             this.rbtnEarthDragon2.Size = new System.Drawing.Size(98, 19);
             this.rbtnEarthDragon2.TabIndex = 3;
-            this.rbtnEarthDragon2.TabStop = true;
             this.rbtnEarthDragon2.Text = "Earth Dragon";
             this.rbtnEarthDragon2.UseVisualStyleBackColor = true;
             this.rbtnEarthDragon2.CheckedChanged += new System.EventHandler(this.RbtnEarthDragon2_CheckedChanged);
@@ -309,11 +315,11 @@
             // 
             this.rbtnWindDragon2.AutoSize = true;
             this.rbtnWindDragon2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnWindDragon2.ForeColor = System.Drawing.Color.Yellow;
             this.rbtnWindDragon2.Location = new System.Drawing.Point(15, 63);
             this.rbtnWindDragon2.Name = "rbtnWindDragon2";
             this.rbtnWindDragon2.Size = new System.Drawing.Size(97, 19);
             this.rbtnWindDragon2.TabIndex = 2;
-            this.rbtnWindDragon2.TabStop = true;
             this.rbtnWindDragon2.Text = "Wind Dragon";
             this.rbtnWindDragon2.UseVisualStyleBackColor = true;
             this.rbtnWindDragon2.CheckedChanged += new System.EventHandler(this.RbtnWindDragon2_CheckedChanged);
@@ -322,11 +328,11 @@
             // 
             this.rbtnIceDragon2.AutoSize = true;
             this.rbtnIceDragon2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnIceDragon2.ForeColor = System.Drawing.Color.Yellow;
             this.rbtnIceDragon2.Location = new System.Drawing.Point(15, 39);
             this.rbtnIceDragon2.Name = "rbtnIceDragon2";
             this.rbtnIceDragon2.Size = new System.Drawing.Size(85, 19);
             this.rbtnIceDragon2.TabIndex = 1;
-            this.rbtnIceDragon2.TabStop = true;
             this.rbtnIceDragon2.Text = "Ice Dragon";
             this.rbtnIceDragon2.UseVisualStyleBackColor = true;
             this.rbtnIceDragon2.CheckedChanged += new System.EventHandler(this.RbtnIceDragon2_CheckedChanged);
@@ -334,7 +340,9 @@
             // rbtnFireDragon2
             // 
             this.rbtnFireDragon2.AutoSize = true;
+            this.rbtnFireDragon2.Checked = true;
             this.rbtnFireDragon2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnFireDragon2.ForeColor = System.Drawing.Color.Yellow;
             this.rbtnFireDragon2.Location = new System.Drawing.Point(15, 15);
             this.rbtnFireDragon2.Name = "rbtnFireDragon2";
             this.rbtnFireDragon2.Size = new System.Drawing.Size(90, 19);
