@@ -3,7 +3,6 @@ using System.Windows.Forms;
 
 namespace DavidTristanPOE
 {
-
     public partial class TurnPlayerForm : Form
     {
 
@@ -121,7 +120,6 @@ namespace DavidTristanPOE
             }
             return p1Roll > p2Roll ? 2 : 1; // Inverted so that when SwitchPlayer() is called after takeInitiative(), it will invert to the correct starting player
         }
-
 
         private int RandomRoll()
         {
