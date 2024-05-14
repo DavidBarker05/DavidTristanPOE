@@ -85,7 +85,7 @@ namespace DavidTristanPOE
             // Set that the player has played if it's their turn
             p1HasPlayed |= playerTurn == 1;
             p2HasPlayed |= playerTurn == 2;
-            blockMessage = (playerTurn == 1 ? p2IsBlocking : p1IsBlocking) ? "blocks it and" : ""; // Update the message if the opponent blocks
+            blockMessage = (playerTurn == 1 ? p2IsBlocking : p1IsBlocking) ? " blocks it and" : ""; // Update the message if the opponent blocks
             // This will display the text in the battle log for when the player chooses to "Special Attack"
             battleText += $"{attacker} special attacks {defender}! {defender}{blockMessage} takes {damage} damage. {defender} is now on {hp} HP\n";
             battleText += "--------------------------------------------------------------------------\n";
