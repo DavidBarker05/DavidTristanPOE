@@ -1,0 +1,6 @@
+Step 1: In the project folder open DavidTristanPOE
+Step 2: Right-click StartGameForm.resx
+Step 3: Click Properties
+Step 4: Click Unblock in the bottom right
+Step 5: Click Apply
+Step 6: Repeat steps 2-5 but for TurnPlayerForm.resx
