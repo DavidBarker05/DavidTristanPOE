@@ -154,8 +154,8 @@ namespace DavidTristanPOE
             string player = playerTurn == 1 ? p1Data[0] : p2Data[0], dragon = playerTurn == 1 ? p1Data[1] : p2Data[1], type = playerTurn == 1 ? p1Data[2] : p2Data[2]; // Fetch current player's data
             string opponent = playerTurn == 1 ? p2Data[0] : p1Data[0], opponentDragon = playerTurn == 1 ? p2Data[1] : p1Data[1], opponentType = playerTurn == 1 ? p2Data[2] : p1Data[2]; // Fetch opponent's data
             int hp = playerTurn == 1 ? p1Values[0] : p2Values[0], opponentHp = playerTurn == 1 ? p2Values[0] : p1Values[0]; // Fetch the hp of the current dragon and opponent dragon
-            p1IsBlocking = playerTurn != 1 && p1IsBlocking; // If it's not p1's turn maintain their dragon's blocking status, else reset it
-            p2IsBlocking = playerTurn != 2 && p2IsBlocking; // If it's not p2's turn maintain their dragon's blocking status, else reset it
+            p1IsBlocking &= playerTurn != 1; // If it's not p1's turn maintain their dragon's blocking status, else reset it
+            p2IsBlocking &= playerTurn != 2; // If it's not p2's turn maintain their dragon's blocking status, else reset it
             if (!p1HasPlayed && !p2HasPlayed) // Start of new round
             {
                 // Add start of new round text to battleText
