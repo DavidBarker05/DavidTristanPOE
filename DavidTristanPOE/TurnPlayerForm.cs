@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace DavidTristanPOE
@@ -15,7 +16,7 @@ namespace DavidTristanPOE
 
         private int playerTurn; // The player number for who's turn it currently is
         // Bools to check if the player is blocking or has played this round
-        private bool p1IsBlocking = false, p2IsBlocking = false, p1HasPlayed = false, p2HasPlayed = false;
+        private bool p1IsBlocking = false, p2IsBlocking = false, p1HasPlayed = false, p2HasPlayed = false, p1IsResting = false, p2IsResting = false;
 
         public TurnPlayerForm()
         {
@@ -82,6 +83,9 @@ namespace DavidTristanPOE
             // Set the hp stat in the array to the hp value
             if (playerTurn == 1) p2Values[0] = hp;
             else p1Values[0] = hp;
+            // Set that the player needs to rest on their next turn
+            p1IsResting |= playerTurn == 1;
+            p2IsResting |= playerTurn == 2;
             // Set that the player has played if it's their turn
             p1HasPlayed |= playerTurn == 1;
             p2HasPlayed |= playerTurn == 2;
@@ -112,7 +116,7 @@ namespace DavidTristanPOE
 
         private void BtnRest_Click(object sender, EventArgs e)
         {
-            // To-do: Rest method (Done with part 3)
+            Rest(playerTurn);
         }
 
         private int TakeInitiative()
@@ -154,6 +158,11 @@ namespace DavidTristanPOE
             string player = playerTurn == 1 ? p1Data[0] : p2Data[0], dragon = playerTurn == 1 ? p1Data[1] : p2Data[1], type = playerTurn == 1 ? p1Data[2] : p2Data[2]; // Fetch current player's data
             string opponent = playerTurn == 1 ? p2Data[0] : p1Data[0], opponentDragon = playerTurn == 1 ? p2Data[1] : p1Data[1], opponentType = playerTurn == 1 ? p2Data[2] : p1Data[2]; // Fetch opponent's data
             int hp = playerTurn == 1 ? p1Values[0] : p2Values[0], opponentHp = playerTurn == 1 ? p2Values[0] : p1Values[0]; // Fetch the hp of the current dragon and opponent dragon
+            bool playerIsResting = playerTurn == 1 ? p1IsResting : p2IsResting; // Fetch the current dragon's resting status
+            btnAttack.Visible = !playerIsResting; // Hide the attack button if the dragon needs to Rest
+            btnSpAttack.Visible = !playerIsResting; // Hide the special attack button if the dragon needs to Rest
+            btnBlock.Visible = !playerIsResting; // Hide the block button if the dragon needs to Rest
+            btnRest.Visible = playerIsResting; // Show the Rest button if the dragon needs to Rest
             p1IsBlocking &= playerTurn != 1; // If it's not p1's turn maintain their dragon's blocking status, else reset it
             p2IsBlocking &= playerTurn != 2; // If it's not p2's turn maintain their dragon's blocking status, else reset it
             if (!p1HasPlayed && !p2HasPlayed) // Start of new round
@@ -164,12 +173,40 @@ namespace DavidTristanPOE
                 battleText += "**************************************************************************\n";
             }
             battleText += $"{player}'s Turn:\n"; // Add who the current player is to the battle log
+            if (hp == 0) // Dragon is dead
+            {
+                btnAttack.Enabled = false; // Disable the attack button if it's dead
+                btnSpAttack.Enabled = false; // Disable the special attack button if it's dead
+                btnBlock.Enabled = false; // Disable the block button if it's dead
+                btnRest.Enabled = false; // Disable the Rest button if it's dead
+                btnAttack.BackColor = Color.IndianRed;
+                btnSpAttack.BackColor = Color.PaleGoldenrod;
+                btnBlock.BackColor = Color.PaleTurquoise;
+                btnRest.BackColor = Color.Thistle;
+                battleText += $"{dragon} is unable to continue. {opponentDragon} is the victor!"; // Add that the current dragon is dead and that the opponent is the winner to battleText
+            }
             lblBattle.Text = battleText; // Updates the battle log to battleText
             lblDragonNameType1.Text = $"{dragon} the {type}'s Turn"; // Update the current dragon's details on the screen
             lblHp1.Text = $"HP: {hp}"; // Update the current dragon's hp on the screen
             lblOpponent.Text = $"Opponent: {opponent}"; // Update the opponent's name on the screen
             lblDragonNameType2.Text = $"{opponentDragon}, the {opponentType}"; // Update the opponent dragon's details on the screen
             lblHp2.Text = $"HP: {opponentHp}"; // Update the opponent dragon's hp on the screen
+        }
+
+        private void Rest(int dragonNum)
+        {
+            // Declerations for the "rest" button
+            string dragon = dragonNum == 1 ? p1Data[1] : p2Data[1], battleText = lblBattle.Text;
+            p1IsResting &= dragonNum != 1; // If it's not p1's turn maintain their dragon's resting status, else reset it
+            p2IsResting &= dragonNum != 2; // If it's not p2's turn maintain their dragon's resting status, else reset it
+            // Set that the player has played if it's their turn
+            p1HasPlayed |= dragonNum == 1;
+            p2HasPlayed |= dragonNum == 2;
+            // Battle log text for when the player has played their turn and has to rest
+            battleText += $"{dragon} is too tired to fight, and rests a while\n";
+            battleText += $"--------------------------------------------------------------------------\n";
+            lblBattle.Text = battleText;// Set the battle log's text
+            SwitchPlayer(); // Switch turns
         }
     }
 }
