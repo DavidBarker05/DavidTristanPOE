@@ -8,7 +8,7 @@ namespace DavidTristanPOE
     {
 
         private string[] p1Data, p2Data; // Array for storing player details(data)
-        private int[] p1Values, p2Values; // Aray for storing the dragon's statistics
+        private int[] p1Values, p2Values; // Array for storing the dragon's statistics
 
         public PictureBox PicPlayer1Dragon { get { return picPlayer1Dragon; } } // Getter property for picPlayer1Dragon
 
@@ -22,7 +22,7 @@ namespace DavidTristanPOE
         {
             InitializeComponent();
             /*
-             * NOTE: These are in-text citations (for urls see the reference list in README/References.Docx)
+             * NOTE: These are in-text citations (for urls see the reference list in README/Final Report.Docx)
              * 
              * 
              * Closing the second form wouldn't exit the application. So, we needed to force an exit while
